@@ -37,6 +37,7 @@ namespace MainApplication
         /// <param name="e">イベントデータ</param>
         private void PrismApplication_Startup(object sender, StartupEventArgs e)
         {
+            // 未処理の例外を処理するイベントハンドラを登録する｡
             DispatcherUnhandledException += Core.ExceptionHandler.OnDispatcherUnhandledException;
             TaskScheduler.UnobservedTaskException += Core.ExceptionHandler.OnUnobservedTaskException;
             AppDomain.CurrentDomain.UnhandledException += Core.ExceptionHandler.OnUnhandledException;
