@@ -4,6 +4,8 @@ using MainApplication.Services.Interfaces;
 using MainApplication.Views;
 using Prism.Ioc;
 using Prism.Modularity;
+using System;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace MainApplication
@@ -26,6 +28,18 @@ namespace MainApplication
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<ModuleNameModule>();
+        }
+
+        /// <summary>
+        /// Startup処理
+        /// </summary>
+        /// <param name="sender">イベントソース</param>
+        /// <param name="e">イベントデータ</param>
+        private void PrismApplication_Startup(object sender, StartupEventArgs e)
+        {
+            DispatcherUnhandledException += Core.ExceptionHandler.OnDispatcherUnhandledException;
+            TaskScheduler.UnobservedTaskException += Core.ExceptionHandler.OnUnobservedTaskException;
+            AppDomain.CurrentDomain.UnhandledException += Core.ExceptionHandler.OnUnhandledException;
         }
     }
 }
