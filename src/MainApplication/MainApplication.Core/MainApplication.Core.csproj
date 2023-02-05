@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Authors>overdrive1708</Authors>
+    <Copyright>Copyright © 2023 overdrive1708</Copyright>
+    <PackageProjectUrl>https://github.com/overdrive1708/SoftwareDevelopmentAssistanceToolkit</PackageProjectUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+</Project>
