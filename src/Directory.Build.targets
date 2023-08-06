@@ -1,0 +1,8 @@
+﻿<Project>
+  <PropertyGroup>
+    <Authors>overdrive1708</Authors>
+    <Copyright>Copyright © 2023 overdrive1708</Copyright>
+    <PackageProjectUrl>https://github.com/overdrive1708/SoftwareDevelopmentAssistanceToolkit</PackageProjectUrl>
+    <NeutralLanguage>ja-JP</NeutralLanguage>
+  </PropertyGroup>
+</Project>

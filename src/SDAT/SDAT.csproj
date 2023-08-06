@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SDAT.Core\SDAT.Core.csproj" />
+    <ProjectReference Include="..\Modules\SDAT.Modules.ModuleName\SDAT.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\Services\SDAT.Services.Interfaces\SDAT.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\SDAT.Services\SDAT.Services.csproj" />
+  </ItemGroup>
+</Project>
