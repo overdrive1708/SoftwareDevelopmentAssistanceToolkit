@@ -4,6 +4,8 @@ using SDAT.Modules.ModuleName;
 using SDAT.Services;
 using SDAT.Services.Interfaces;
 using SDAT.Views;
+using System;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace SDAT
@@ -26,6 +28,19 @@ namespace SDAT
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<ModuleNameModule>();
+        }
+
+        /// <summary>
+        /// Startup処理
+        /// </summary>
+        /// <param name="sender">イベントソース</param>
+        /// <param name="e">イベントデータ</param>
+        private void PrismApplication_Startup(object sender, StartupEventArgs e)
+        {
+            // 未処理の例外が発生したときの処理を登録する｡
+            DispatcherUnhandledException += Core.ExceptionHandler.OnDispatcherUnhandledException;
+            TaskScheduler.UnobservedTaskException += Core.ExceptionHandler.OnUnobservedTaskException;
+            AppDomain.CurrentDomain.UnhandledException += Core.ExceptionHandler.OnUnhandledException;
         }
     }
 }
