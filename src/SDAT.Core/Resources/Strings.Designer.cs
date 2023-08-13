@@ -79,6 +79,34 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
+        ///   使用しているライブラリ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string LibrariesUsed {
+            get {
+                return ResourceManager.GetString("LibrariesUsed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ライセンス に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string License {
+            get {
+                return ResourceManager.GetString("License", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   このソフトウェアはMITライセンスです。
+        ///詳細は以下のURLを参照してください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageAboutInfoLibrariesBody {
+            get {
+                return ResourceManager.GetString("MessageAboutInfoLibrariesBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   致命的なエラーが発生しました｡
         ///このアプリケーションを終了します｡
         ///エラーの詳細な情報を表示しますか? に類似しているローカライズされた文字列を検索します。
@@ -105,6 +133,15 @@ namespace SDAT.Core.Resources {
         public static string MessageWelcomeTitle {
             get {
                 return ResourceManager.GetString("MessageWelcomeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   製品名 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ProductName {
+            get {
+                return ResourceManager.GetString("ProductName", resourceCulture);
             }
         }
     }

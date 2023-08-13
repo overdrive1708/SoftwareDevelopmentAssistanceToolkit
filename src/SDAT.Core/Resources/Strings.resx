@@ -115,4 +115,17 @@
     <value>このツールはソフトウェア開発に便利なツールを集めたツールキットです｡
 メニューからツールを選んでください｡</value>
   </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>製品名</value>
+  </data>
+  <data name="License" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="LibrariesUsed" xml:space="preserve">
+    <value>使用しているライブラリ</value>
+  </data>
+  <data name="MessageAboutInfoLibrariesBody" xml:space="preserve">
+    <value>このソフトウェアはMITライセンスです。
+詳細は以下のURLを参照してください。</value>
+  </data>
 </root>
