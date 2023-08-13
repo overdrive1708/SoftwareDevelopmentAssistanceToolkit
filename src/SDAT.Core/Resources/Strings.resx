@@ -108,4 +108,11 @@
 このアプリケーションを終了します｡
 エラーの詳細な情報を表示しますか?</value>
   </data>
+  <data name="MessageWelcomeTitle" xml:space="preserve">
+    <value>｢Software Development Assistance Toolkit｣へようこそ!</value>
+  </data>
+  <data name="MessageWelcomeBody" xml:space="preserve">
+    <value>このツールはソフトウェア開発に便利なツールを集めたツールキットです｡
+メニューからツールを選んでください｡</value>
+  </data>
 </root>

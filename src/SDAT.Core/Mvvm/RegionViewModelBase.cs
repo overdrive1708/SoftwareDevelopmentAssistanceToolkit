@@ -7,6 +7,14 @@ namespace SDAT.Core.Mvvm
     {
         protected IRegionManager RegionManager { get; private set; }
 
+        /// <summary>
+        /// コンストラクタ(XAMLデザイナー用)
+        /// </summary>
+        public RegionViewModelBase()
+        {
+            // 無処理
+        }
+
         public RegionViewModelBase(IRegionManager regionManager)
         {
             RegionManager = regionManager;

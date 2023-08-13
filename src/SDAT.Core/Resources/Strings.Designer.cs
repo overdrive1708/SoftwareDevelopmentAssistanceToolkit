@@ -88,5 +88,24 @@ namespace SDAT.Core.Resources {
                 return ResourceManager.GetString("MessageFatalError", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   このツールはソフトウェア開発に便利なツールを集めたツールキットです｡
+        ///メニューからツールを選んでください｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageWelcomeBody {
+            get {
+                return ResourceManager.GetString("MessageWelcomeBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ｢Software Development Assistance Toolkit｣へようこそ! に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageWelcomeTitle {
+            get {
+                return ResourceManager.GetString("MessageWelcomeTitle", resourceCulture);
+            }
+        }
     }
 }
