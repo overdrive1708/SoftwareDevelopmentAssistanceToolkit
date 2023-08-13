@@ -12,7 +12,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Modules\SDAT.Modules.WelcomeInfo\SDAT.Modules.WelcomeInfo.csproj" />
     <ProjectReference Include="..\SDAT.Core\SDAT.Core.csproj" />
-    <ProjectReference Include="..\Modules\SDAT.Modules.ModuleName\SDAT.Modules.ModuleName.csproj" />
     <ProjectReference Include="..\Services\SDAT.Services.Interfaces\SDAT.Services.Interfaces.csproj" />
     <ProjectReference Include="..\Services\SDAT.Services\SDAT.Services.csproj" />
   </ItemGroup>
