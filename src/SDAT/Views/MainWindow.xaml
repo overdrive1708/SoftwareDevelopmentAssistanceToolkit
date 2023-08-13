@@ -9,8 +9,8 @@
     xmlns:prism="http://prismlibrary.com/"
     xmlns:viewmodels="clr-namespace:SDAT.ViewModels"
     Title="{Binding Title}"
-    Width="525"
-    Height="350"
+    Width="1280"
+    Height="800"
     d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel,
                                      IsDesignTimeCreatable=True}"
     prism:ViewModelLocator.AutoWireViewModel="True"
