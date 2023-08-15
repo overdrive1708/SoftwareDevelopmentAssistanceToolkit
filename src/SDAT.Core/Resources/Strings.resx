@@ -134,4 +134,13 @@
   <data name="MenuHelp" xml:space="preserve">
     <value>ヘルプ</value>
   </data>
+  <data name="VersionInfo" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>コンポーネント</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>バージョン</value>
+  </data>
 </root>

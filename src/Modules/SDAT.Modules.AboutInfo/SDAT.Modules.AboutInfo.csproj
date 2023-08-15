@@ -9,5 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\SDAT.Core\SDAT.Core.csproj" />
+    <ProjectReference Include="..\..\Services\SDAT.Services.Interfaces\SDAT.Services.Interfaces.csproj" />
   </ItemGroup>
 </Project>

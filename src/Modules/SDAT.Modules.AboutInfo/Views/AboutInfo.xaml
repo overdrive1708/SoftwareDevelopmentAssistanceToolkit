@@ -35,6 +35,17 @@
                     https://github.com/overdrive1708/SoftwareDevelopmentAssistanceToolkit/blob/main/README.md
                 </Hyperlink>
             </TextBlock>
+            <TextBlock Style="{StaticResource MaterialDesignHeadline5TextBlock}" Text="{x:Static coreresources:Strings.VersionInfo}" />
+            <DataGrid
+                AutoGenerateColumns="False"
+                HeadersVisibility="Column"
+                IsReadOnly="True"
+                ItemsSource="{Binding Path=VersionInfoData}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=Component}" Header="{x:Static coreresources:Strings.Component}" />
+                    <DataGridTextColumn Binding="{Binding Path=Version}" Header="{x:Static coreresources:Strings.Version}" />
+                </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
     </Grid>
 </UserControl>

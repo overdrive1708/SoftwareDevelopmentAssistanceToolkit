@@ -70,6 +70,15 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
+        ///   コンポーネント に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Component {
+            get {
+                return ResourceManager.GetString("Component", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   重要なお知らせ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ImportantNotice {
@@ -160,6 +169,24 @@ namespace SDAT.Core.Resources {
         public static string ScreenTitleAboutInfo {
             get {
                 return ResourceManager.GetString("ScreenTitleAboutInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   バージョン に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   バージョン情報 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string VersionInfo {
+            get {
+                return ResourceManager.GetString("VersionInfo", resourceCulture);
             }
         }
     }
