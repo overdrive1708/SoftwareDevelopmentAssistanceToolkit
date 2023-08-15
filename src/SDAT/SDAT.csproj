@@ -7,7 +7,7 @@
     <ApplicationIcon>Resources\AppIconExe-multisize.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Resources\AppIconExe-multisize.ico" />
+    <Resource Include="Resources\AppIconExe-multisize.ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
