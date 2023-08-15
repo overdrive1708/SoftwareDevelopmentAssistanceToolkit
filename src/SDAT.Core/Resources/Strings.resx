@@ -143,4 +143,7 @@
   <data name="Version" xml:space="preserve">
     <value>バージョン</value>
   </data>
+  <data name="MessageAboutInfoFollowingURL" xml:space="preserve">
+    <value>詳細は以下のURLを参照してください。</value>
+  </data>
 </root>

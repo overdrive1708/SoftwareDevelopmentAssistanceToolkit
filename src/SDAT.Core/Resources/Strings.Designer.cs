@@ -115,6 +115,15 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
+        ///   詳細は以下のURLを参照してください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageAboutInfoFollowingURL {
+            get {
+                return ResourceManager.GetString("MessageAboutInfoFollowingURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   このソフトウェアはMITライセンスです。
         ///詳細は以下のURLを参照してください。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
