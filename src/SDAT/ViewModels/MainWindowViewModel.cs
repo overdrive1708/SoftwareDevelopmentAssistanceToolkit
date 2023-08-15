@@ -72,7 +72,7 @@ namespace SDAT.ViewModels
             Title = screenName switch
             {
                 "WelcomeInfo" => Core.Resources.Strings.ApplicationName,
-                "AboutInfo" => $"{Core.Resources.Strings.ApplicationName} | {Core.Resources.Strings.ScreenTitleAboutInfo}",
+                "AboutInfo" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleAboutInfo}",
                 _ => Core.Resources.Strings.ApplicationName,
             };
         }

@@ -102,7 +102,7 @@ namespace SDAT.Modules.AboutInfo.ViewModels
             VersionInfoData.Clear();
 
             // ライセンス情報表示値の更新
-            LicenseBody = $"{_messageService.GetCopyrightInfo()}\r\n{Core.Resources.Strings.MessageAboutInfoLibrariesBody}";
+            LicenseBody = $"{_messageService.GetCopyrightInfo()}\r\n{Resources.Strings.MessageAboutInfoFollowingURL}";
 
             // バージョン情報表示値の更新(メインアプリケーション)
             versionInfo = new()

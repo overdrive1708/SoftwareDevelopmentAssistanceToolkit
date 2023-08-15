@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SDAT.Core.Resources {
+namespace SDAT.Modules.WelcomeInfo.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SDAT.Core.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Core.Resources.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Modules.WelcomeInfo.Resources.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,31 +61,21 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
-        ///   Software Development Assistance Toolkit に類似しているローカライズされた文字列を検索します。
+        ///   このツールはソフトウェア開発に便利なツールを集めたツールキットです｡
+        ///メニューからツールを選んでください｡ に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ApplicationName {
+        public static string MessageWelcomeInfoBody {
             get {
-                return ResourceManager.GetString("ApplicationName", resourceCulture);
+                return ResourceManager.GetString("MessageWelcomeInfoBody", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   重要なお知らせ に類似しているローカライズされた文字列を検索します。
+        ///   ｢Software Development Assistance Toolkit｣へようこそ! に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ImportantNotice {
+        public static string MessageWelcomeInfoTitle {
             get {
-                return ResourceManager.GetString("ImportantNotice", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   致命的なエラーが発生しました｡
-        ///このアプリケーションを終了します｡
-        ///エラーの詳細な情報を表示しますか? に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        public static string MessageFatalError {
-            get {
-                return ResourceManager.GetString("MessageFatalError", resourceCulture);
+                return ResourceManager.GetString("MessageWelcomeInfoTitle", resourceCulture);
             }
         }
     }

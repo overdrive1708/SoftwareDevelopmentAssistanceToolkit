@@ -2,10 +2,10 @@
     x:Class="SDAT.Modules.WelcomeInfo.Views.WelcomeInfo"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:coreresources="clr-namespace:SDAT.Core.Resources;assembly=SDAT.Core"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
+    xmlns:resources="clr-namespace:SDAT.Modules.WelcomeInfo.Resources"
     xmlns:viewmodels="clr-namespace:SDAT.Modules.WelcomeInfo.ViewModels"
     d:DataContext="{d:DesignInstance Type=viewmodels:WelcomeInfoViewModel,
                                      IsDesignTimeCreatable=True}"
@@ -16,11 +16,11 @@
             <TextBlock
                 HorizontalAlignment="Center"
                 Style="{StaticResource MaterialDesignHeadline5TextBlock}"
-                Text="{x:Static coreresources:Strings.MessageWelcomeTitle}" />
+                Text="{x:Static resources:Strings.MessageWelcomeInfoTitle}" />
             <TextBlock
                 HorizontalAlignment="Center"
                 Style="{StaticResource MaterialDesignBody1TextBlock}"
-                Text="{x:Static coreresources:Strings.MessageWelcomeBody}" />
+                Text="{x:Static resources:Strings.MessageWelcomeInfoBody}" />
         </StackPanel>
     </Grid>
 </UserControl>

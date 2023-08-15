@@ -97,15 +97,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ApplicationName" xml:space="preserve">
-    <value>Software Development Assistance Toolkit</value>
+  <data name="MenuHelp" xml:space="preserve">
+    <value>ヘルプ</value>
   </data>
-  <data name="ImportantNotice" xml:space="preserve">
-    <value>重要なお知らせ</value>
+  <data name="MenuAboutInfo" xml:space="preserve">
+    <value>このソフトウェアについて</value>
   </data>
-  <data name="MessageFatalError" xml:space="preserve">
-    <value>致命的なエラーが発生しました｡
-このアプリケーションを終了します｡
-エラーの詳細な情報を表示しますか?</value>
+  <data name="ScreenTitleAboutInfo" xml:space="preserve">
+    <value>このソフトウェアについて</value>
   </data>
 </root>

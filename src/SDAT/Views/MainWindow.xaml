@@ -4,12 +4,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:core="clr-namespace:SDAT.Core;assembly=SDAT.Core"
-    xmlns:coreresources="clr-namespace:SDAT.Core.Resources;assembly=SDAT.Core"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:prism="http://prismlibrary.com/"
+    xmlns:resources="clr-namespace:SDAT.Resources"
     xmlns:viewmodels="clr-namespace:SDAT.ViewModels"
     Title="{Binding Title}"
     Width="1280"
@@ -35,11 +35,11 @@
                 materialDesign:MenuAssist.TopLevelMenuItemHeight="25"
                 materialDesign:RippleAssist.IsDisabled="True"
                 DockPanel.Dock="Top">
-                <MenuItem Header="{x:Static coreresources:Strings.MenuHelp}">
+                <MenuItem Header="{x:Static resources:Strings.MenuHelp}">
                     <MenuItem
                         Command="{Binding CommandTransitionScreen}"
                         CommandParameter="AboutInfo"
-                        Header="{x:Static coreresources:Strings.ScreenTitleAboutInfo}" />
+                        Header="{x:Static resources:Strings.MenuAboutInfo}" />
                 </MenuItem>
             </Menu>
             <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" />

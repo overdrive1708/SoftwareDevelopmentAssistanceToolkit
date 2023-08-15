@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Core", "SDAT.Core\SDAT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.WelcomeInfo", "Modules\SDAT.Modules.WelcomeInfo\SDAT.Modules.WelcomeInfo.csproj", "{CB368B1E-90C2-4E39-A5DB-8639C16F92CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDAT.Modules.AboutInfo", "Modules\SDAT.Modules.AboutInfo\SDAT.Modules.AboutInfo.csproj", "{B9587C30-F476-40A5-9FC5-3185C0A4BB0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.AboutInfo", "Modules\SDAT.Modules.AboutInfo\SDAT.Modules.AboutInfo.csproj", "{B9587C30-F476-40A5-9FC5-3185C0A4BB0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,7 +62,7 @@ Global
 		{B9587C30-F476-40A5-9FC5-3185C0A4BB0B} = {C540AC6D-1576-4D14-A650-90C6F17EE4FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_NeutralResourcesLanguage = ja-JP
 		SolutionGuid = {D6A478D8-94CE-4648-9111-28C190E93450}
+		RESX_NeutralResourcesLanguage = ja-JP
 	EndGlobalSection
 EndGlobal

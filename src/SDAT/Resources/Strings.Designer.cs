@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SDAT.Core.Resources {
+namespace SDAT.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SDAT.Core.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Core.Resources.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Resources.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,31 +61,29 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
-        ///   Software Development Assistance Toolkit に類似しているローカライズされた文字列を検索します。
+        ///   このソフトウェアについて に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ApplicationName {
+        public static string MenuAboutInfo {
             get {
-                return ResourceManager.GetString("ApplicationName", resourceCulture);
+                return ResourceManager.GetString("MenuAboutInfo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   重要なお知らせ に類似しているローカライズされた文字列を検索します。
+        ///   ヘルプ に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ImportantNotice {
+        public static string MenuHelp {
             get {
-                return ResourceManager.GetString("ImportantNotice", resourceCulture);
+                return ResourceManager.GetString("MenuHelp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   致命的なエラーが発生しました｡
-        ///このアプリケーションを終了します｡
-        ///エラーの詳細な情報を表示しますか? に類似しているローカライズされた文字列を検索します。
+        ///   このソフトウェアについて に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MessageFatalError {
+        public static string ScreenTitleAboutInfo {
             get {
-                return ResourceManager.GetString("MessageFatalError", resourceCulture);
+                return ResourceManager.GetString("ScreenTitleAboutInfo", resourceCulture);
             }
         }
     }

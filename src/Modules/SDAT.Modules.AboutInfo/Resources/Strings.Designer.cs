@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SDAT.Core.Resources {
+namespace SDAT.Modules.AboutInfo.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SDAT.Core.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Core.Resources.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Modules.AboutInfo.Resources.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,31 +61,65 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
-        ///   Software Development Assistance Toolkit に類似しているローカライズされた文字列を検索します。
+        ///   コンポーネント に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ApplicationName {
+        public static string Component {
             get {
-                return ResourceManager.GetString("ApplicationName", resourceCulture);
+                return ResourceManager.GetString("Component", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   重要なお知らせ に類似しているローカライズされた文字列を検索します。
+        ///   使用しているライブラリ に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ImportantNotice {
+        public static string LibrariesUsed {
             get {
-                return ResourceManager.GetString("ImportantNotice", resourceCulture);
+                return ResourceManager.GetString("LibrariesUsed", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   致命的なエラーが発生しました｡
-        ///このアプリケーションを終了します｡
-        ///エラーの詳細な情報を表示しますか? に類似しているローカライズされた文字列を検索します。
+        ///   ライセンス に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MessageFatalError {
+        public static string License {
             get {
-                return ResourceManager.GetString("MessageFatalError", resourceCulture);
+                return ResourceManager.GetString("License", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   詳細は以下のURLを参照してください。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageAboutInfoFollowingURL {
+            get {
+                return ResourceManager.GetString("MessageAboutInfoFollowingURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   製品名 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ProductName {
+            get {
+                return ResourceManager.GetString("ProductName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   バージョン に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   バージョン情報 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string VersionInfo {
+            get {
+                return ResourceManager.GetString("VersionInfo", resourceCulture);
             }
         }
     }
