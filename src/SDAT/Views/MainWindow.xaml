@@ -19,6 +19,8 @@
     prism:ViewModelLocator.AutoWireViewModel="True"
     BorderThickness="1"
     GlowBrush="{DynamicResource AccentColorBrush}"
+    Icon="/Resources/AppIconExe-multisize.ico"
+    ShowIconOnTitleBar="True"
     TitleCharacterCasing="Normal"
     WindowTransitionsEnabled="False"
     mc:Ignorable="d">

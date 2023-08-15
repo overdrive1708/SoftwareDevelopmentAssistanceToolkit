@@ -5,6 +5,9 @@
     <VersionPrefix>0.1.0</VersionPrefix>
   </PropertyGroup>
   <ItemGroup>
+    <Resource Include="Resources\AppIconExe-multisize.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>

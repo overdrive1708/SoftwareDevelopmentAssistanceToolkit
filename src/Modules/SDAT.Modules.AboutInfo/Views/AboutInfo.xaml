@@ -14,7 +14,13 @@
     <Grid Margin="10,10,10,10" HorizontalAlignment="Center">
         <StackPanel>
             <TextBlock Style="{StaticResource MaterialDesignHeadline5TextBlock}" Text="{x:Static resources:Strings.ProductName}" />
-            <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" Text="{Binding ProductBody}" />
+            <StackPanel Orientation="Horizontal">
+                <Image
+                    Width="32"
+                    Margin="0,0,10,0"
+                    Source="/Resources/AppIconExe-multisize.ico" />
+                <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" Text="{Binding ProductBody}" />
+            </StackPanel>
             <TextBlock Style="{StaticResource MaterialDesignHeadline5TextBlock}" Text="{x:Static resources:Strings.License}" />
             <TextBlock Style="{StaticResource MaterialDesignBody1TextBlock}" Text="{Binding LicenseBody}" />
             <TextBlock>

@@ -1,6 +1,9 @@
 [日本語](README.md)
 
 <h1 align="center">
+    <a href="https://github.com/overdrive1708/SoftwareDevelopmentAssistanceToolkit">
+        <img alt="SoftwareDevelopmentAssistanceToolkit" src="docs/images/AppIconReadme.png" width="100" height="100">
+    </a><br>
     SDAT -Software Development Assistance Toolkit-
 </h1>
 
