@@ -1,6 +1,7 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
-using SDAT.Modules.ModuleName;
+using SDAT.Modules.AboutInfo;
+using SDAT.Modules.WelcomeInfo;
 using SDAT.Services;
 using SDAT.Services.Interfaces;
 using SDAT.Views;
@@ -27,7 +28,8 @@ namespace SDAT
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
-            moduleCatalog.AddModule<ModuleNameModule>();
+            moduleCatalog.AddModule<WelcomeInfoModule>();
+            moduleCatalog.AddModule<AboutInfoModule>();
         }
 
         /// <summary>
