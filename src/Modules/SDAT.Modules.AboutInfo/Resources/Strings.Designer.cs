@@ -61,6 +61,15 @@ namespace SDAT.Modules.AboutInfo.Resources {
         }
         
         /// <summary>
+        ///   完了 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Complete {
+            get {
+                return ResourceManager.GetString("Complete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   コンポーネント に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Component {
@@ -93,6 +102,24 @@ namespace SDAT.Modules.AboutInfo.Resources {
         public static string MessageAboutInfoFollowingURL {
             get {
                 return ResourceManager.GetString("MessageAboutInfoFollowingURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   バージョン情報のクリップボード出力が完了しました｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageCompleteOutputVersionInfo {
+            get {
+                return ResourceManager.GetString("MessageCompleteOutputVersionInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   バージョン情報のクリップボード出力 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OutputVersionInfo {
+            get {
+                return ResourceManager.GetString("OutputVersionInfo", resourceCulture);
             }
         }
         

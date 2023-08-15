@@ -118,4 +118,13 @@
   <data name="MessageAboutInfoFollowingURL" xml:space="preserve">
     <value>詳細は以下のURLを参照してください。</value>
   </data>
+  <data name="OutputVersionInfo" xml:space="preserve">
+    <value>バージョン情報のクリップボード出力</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="MessageCompleteOutputVersionInfo" xml:space="preserve">
+    <value>バージョン情報のクリップボード出力が完了しました｡</value>
+  </data>
 </root>

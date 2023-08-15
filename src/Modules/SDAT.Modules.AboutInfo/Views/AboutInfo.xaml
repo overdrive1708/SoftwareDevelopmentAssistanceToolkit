@@ -46,6 +46,10 @@
                     <DataGridTextColumn Binding="{Binding Path=Version}" Header="{x:Static resources:Strings.Version}" />
                 </DataGrid.Columns>
             </DataGrid>
+            <Button
+                Command="{Binding CommandOutputVersionInfo}"
+                Content="{x:Static resources:Strings.OutputVersionInfo}"
+                Style="{StaticResource MaterialDesignOutlinedButton}" />
         </StackPanel>
     </Grid>
 </UserControl>

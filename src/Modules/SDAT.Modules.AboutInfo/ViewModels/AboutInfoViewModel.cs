@@ -4,6 +4,7 @@ using SDAT.Core.Mvvm;
 using SDAT.Services.Interfaces;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Windows;
 
 namespace SDAT.Modules.AboutInfo.ViewModels
 {
@@ -60,6 +61,13 @@ namespace SDAT.Modules.AboutInfo.ViewModels
         private DelegateCommand<string> _commandOpenUrl;
         public DelegateCommand<string> CommandOpenUrl =>
             _commandOpenUrl ?? (_commandOpenUrl = new DelegateCommand<string>(ExecuteCommandOpenUrl));
+
+        /// <summary>
+        /// バージョン情報出力
+        /// </summary>
+        private DelegateCommand _commandOutputVersionInfo;
+        public DelegateCommand CommandOutputVersionInfo =>
+            _commandOutputVersionInfo ?? (_commandOutputVersionInfo = new DelegateCommand(ExecuteCommandOutputVersionInfo));
 
         //--------------------------------------------------
         // 内部変数
@@ -164,6 +172,23 @@ namespace SDAT.Modules.AboutInfo.ViewModels
                 UseShellExecute = true,
             };
             Process.Start(psi);
+        }
+
+        /// <summary>
+        /// バージョン情報出力コマンド実行処理
+        /// </summary>
+        private void ExecuteCommandOutputVersionInfo()
+        {
+            string copytext = $"{Resources.Strings.Component},{Resources.Strings.Version}";
+
+            foreach (VersionInfo versionInfo in VersionInfoData)
+            {
+                copytext = $"{copytext}\r\n{versionInfo.Component},{versionInfo.Version}";
+            }
+
+            Clipboard.SetText(copytext);
+
+            MessageBox.Show(Resources.Strings.MessageCompleteOutputVersionInfo, Resources.Strings.Complete, MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
