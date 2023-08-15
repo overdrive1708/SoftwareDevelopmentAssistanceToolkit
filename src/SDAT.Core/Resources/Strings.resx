@@ -128,4 +128,10 @@
     <value>このソフトウェアはMITライセンスです。
 詳細は以下のURLを参照してください。</value>
   </data>
+  <data name="ScreenTitleAboutInfo" xml:space="preserve">
+    <value>このソフトウェアについて</value>
+  </data>
+  <data name="MenuHelp" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
 </root>

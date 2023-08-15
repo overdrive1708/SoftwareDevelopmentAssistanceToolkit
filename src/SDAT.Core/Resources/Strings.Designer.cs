@@ -97,6 +97,15 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
+        ///   ヘルプ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MenuHelp {
+            get {
+                return ResourceManager.GetString("MenuHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   このソフトウェアはMITライセンスです。
         ///詳細は以下のURLを参照してください。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
@@ -142,6 +151,15 @@ namespace SDAT.Core.Resources {
         public static string ProductName {
             get {
                 return ResourceManager.GetString("ProductName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   このソフトウェアについて に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ScreenTitleAboutInfo {
+            get {
+                return ResourceManager.GetString("ScreenTitleAboutInfo", resourceCulture);
             }
         }
     }
