@@ -43,5 +43,11 @@
         /// </summary>
         /// <returns>コピーライト情報</returns>
         string GetCopyrightInfo();
+
+        /// <summary>
+        /// 製品情報取得処理
+        /// </summary>
+        /// <returns>製品情報</returns>
+        string GetProductInfo();
     }
 }
