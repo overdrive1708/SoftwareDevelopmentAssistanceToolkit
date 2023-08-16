@@ -80,6 +80,16 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_6780E2DBF39C4E5086B050822B85EF7B"
+                {
+                "Name" = "8:.NET Core"
+                "Message" = "8:[VSDNETCOREMSG]"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:https://dotnet.microsoft.com/download/dotnet-core/[NetCoreVerMajorDotMinor]"
+                "IsNETCore" = "11:TRUE"
+                "Architecture" = "2:0"
+                "Runtime" = "2:0"
+                }
             }
         }
         "File"
@@ -139,9 +149,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:SoftwareDevelopmentAssistanceToolkit "
+        "ProductName" = "8:SoftwareDevelopmentAssistanceToolkit"
         "ProductCode" = "8:{AB3A42A2-5A58-4250-A4B8-86E8FCD165EA}"
-        "PackageCode" = "8:{2C0A694E-2F6B-410B-8DBC-8B3EE8B12CF7}"
+        "PackageCode" = "8:{90F9A6E7-47D5-44D2-BDB0-58A0E1B1A8BC}"
         "UpgradeCode" = "8:{4493E9DA-09B0-4D5B-8209-DA8E88BAF511}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -261,6 +271,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_83B2817F19F94871A2776D721BDF7B37"
+            {
+            "Name" = "8:SoftwareDevelopmentAssistanceToolkit"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_27EC11A9828B4BA6903DC189C6718AB6"
+            "Folder" = "8:_57A356308F6A48BC81FE6BDE7C148CB4"
+            "WorkingFolder" = "8:_FDAA996DF0FC4F519273867767EE30FC"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -660,9 +684,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_35AB4018EBE8418DB9E3D1C3092C6D1F"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_27EC11A9828B4BA6903DC189C6718AB6"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\SDAT\\obj\\Release\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_FDAA996DF0FC4F519273867767EE30FC"
@@ -684,7 +708,7 @@
             "OutputGroupCanonicalName" = "8:PublishItems"
             "OutputProjectGuid" = "8:{2E8C611C-AC4D-4F18-9082-C3FECB709ED0}"
             "ShowKeyOutput" = "11:TRUE"
-            "PublishProfilePath" = "8:Properties\\PublishProfiles\\FolderProfile.pubxml"
+            "PublishProfilePath" = "8:..\\SDAT\\Properties\\PublishProfiles\\FolderProfile.pubxml"
                 "ExcludeFilters"
                 {
                 }
