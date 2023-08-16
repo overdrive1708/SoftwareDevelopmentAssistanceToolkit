@@ -1,5 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
+    <Product>SoftwareDevelopmentAssistanceToolkit</Product>
     <Authors>overdrive1708</Authors>
     <Copyright>Copyright © 2023 overdrive1708</Copyright>
     <PackageProjectUrl>https://github.com/overdrive1708/SoftwareDevelopmentAssistanceToolkit</PackageProjectUrl>
