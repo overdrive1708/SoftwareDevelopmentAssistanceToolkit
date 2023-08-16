@@ -13,6 +13,12 @@
 "SccProvider" = "8:"
     "Hierarchy"
     {
+        "Entry"
+        {
+        "MsmKey" = "8:_95C5BF2B9FAF4444867A4B3BC8327E96"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -94,6 +100,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_95C5BF2B9FAF4444867A4B3BC8327E96"
+            {
+            "SourcePath" = "8:AppIconExe-multisize.ico"
+            "TargetName" = "8:AppIconExe-multisize.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_FDAA996DF0FC4F519273867767EE30FC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -151,7 +177,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SoftwareDevelopmentAssistanceToolkit"
         "ProductCode" = "8:{AB3A42A2-5A58-4250-A4B8-86E8FCD165EA}"
-        "PackageCode" = "8:{90F9A6E7-47D5-44D2-BDB0-58A0E1B1A8BC}"
+        "PackageCode" = "8:{71EE70AA-6868-4FE0-B569-4239E081DC86}"
         "UpgradeCode" = "8:{4493E9DA-09B0-4D5B-8209-DA8E88BAF511}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -168,7 +194,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_95C5BF2B9FAF4444867A4B3BC8327E96"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -282,7 +308,7 @@
             "Target" = "8:_27EC11A9828B4BA6903DC189C6718AB6"
             "Folder" = "8:_57A356308F6A48BC81FE6BDE7C148CB4"
             "WorkingFolder" = "8:_FDAA996DF0FC4F519273867767EE30FC"
-            "Icon" = "8:"
+            "Icon" = "8:_95C5BF2B9FAF4444867A4B3BC8327E96"
             "Feature" = "8:"
             }
         }
