@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.WelcomeInfo", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.AboutInfo", "Modules\SDAT.Modules.AboutInfo\SDAT.Modules.AboutInfo.csproj", "{B9587C30-F476-40A5-9FC5-3185C0A4BB0B}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{40E6C889-DE27-4A2D-8DA5-1C7693B742D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,8 @@ Global
 		{B9587C30-F476-40A5-9FC5-3185C0A4BB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9587C30-F476-40A5-9FC5-3185C0A4BB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9587C30-F476-40A5-9FC5-3185C0A4BB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E6C889-DE27-4A2D-8DA5-1C7693B742D3}.Debug|Any CPU.ActiveCfg = Debug
+		{40E6C889-DE27-4A2D-8DA5-1C7693B742D3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
