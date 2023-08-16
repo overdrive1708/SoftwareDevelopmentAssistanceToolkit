@@ -25,7 +25,7 @@ namespace SDAT.Modules.AboutInfo.ViewModels
         /// <summary>
         /// 製品名
         /// </summary>
-        private string _productBody = Core.Resources.Strings.ApplicationName;
+        private string _productBody = string.Empty;
         public string ProductBody
         {
             get { return _productBody; }
@@ -108,6 +108,9 @@ namespace SDAT.Modules.AboutInfo.ViewModels
             VersionInfo versionInfo;
 
             VersionInfoData.Clear();
+
+            // 製品名情報表示値の更新
+            ProductBody = _messageService.GetProductInfo();
 
             // ライセンス情報表示値の更新
             LicenseBody = $"{_messageService.GetCopyrightInfo()}\r\n{Resources.Strings.MessageAboutInfoFollowingURL}";
