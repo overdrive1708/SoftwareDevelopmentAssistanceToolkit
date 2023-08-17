@@ -1,0 +1,112 @@
+﻿<UserControl
+    x:Class="SDAT.Modules.ConvertRadix.Views.ConvertRadix"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:resources="clr-namespace:SDAT.Modules.ConvertRadix.Resources"
+    xmlns:viewmodels="clr-namespace:SDAT.Modules.ConvertRadix.ViewModels"
+    d:DataContext="{d:DesignInstance Type=viewmodels:ConvertRadixViewModel,
+                                     IsDesignTimeCreatable=True}"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <Grid Margin="10,10,10,10" HorizontalAlignment="Center">
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal">
+            <GroupBox
+                Margin="10,10,10,10"
+                Header="{x:Static resources:Strings.ConversionFromBin}"
+                Style="{StaticResource MaterialDesignGroupBox}">
+                <StackPanel>
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                    <Button
+                        Margin="10,10,10,10"
+                        Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
+                        Style="{StaticResource MaterialDesignIconButton}"
+                        ToolTip="{x:Static resources:Strings.ConversionFromBin}">
+                        <materialDesign:PackIcon Kind="ArrowDownBold" />
+                    </Button>
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
+                        IsReadOnly="True"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
+                        IsReadOnly="True"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox
+                Margin="10,10,10,10"
+                Header="{x:Static resources:Strings.ConversionFromDec}"
+                Style="{StaticResource MaterialDesignGroupBox}">
+                <StackPanel>
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                    <Button
+                        Margin="10,10,10,10"
+                        Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
+                        Style="{StaticResource MaterialDesignIconButton}"
+                        ToolTip="{x:Static resources:Strings.ConversionFromDec}">
+                        <materialDesign:PackIcon Kind="ArrowDownBold" />
+                    </Button>
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
+                        IsReadOnly="True"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
+                        IsReadOnly="True"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox
+                Margin="10,10,10,10"
+                Header="{x:Static resources:Strings.ConversionFromHex}"
+                Style="{StaticResource MaterialDesignGroupBox}">
+                <StackPanel>
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                    <Button
+                        Margin="10,10,10,10"
+                        Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
+                        Style="{StaticResource MaterialDesignIconButton}"
+                        ToolTip="{x:Static resources:Strings.ConversionFromHex}">
+                        <materialDesign:PackIcon Kind="ArrowDownBold" />
+                    </Button>
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
+                        IsReadOnly="True"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                    <TextBox
+                        Margin="10,10,10,10"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
+                        IsReadOnly="True"
+                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</UserControl>
