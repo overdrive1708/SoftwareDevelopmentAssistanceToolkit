@@ -15,6 +15,7 @@
     <Grid Margin="10,10,10,10" HorizontalAlignment="Center">
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal">
             <GroupBox
+                MinWidth="250"
                 Margin="10,10,10,10"
                 Header="{x:Static resources:Strings.ConvertFromBin}"
                 Style="{StaticResource MaterialDesignGroupBox}">
@@ -46,6 +47,7 @@
                 </StackPanel>
             </GroupBox>
             <GroupBox
+                MinWidth="250"
                 Margin="10,10,10,10"
                 Header="{x:Static resources:Strings.ConvertFromDec}"
                 Style="{StaticResource MaterialDesignGroupBox}">
@@ -77,6 +79,7 @@
                 </StackPanel>
             </GroupBox>
             <GroupBox
+                MinWidth="250"
                 Margin="10,10,10,10"
                 Header="{x:Static resources:Strings.ConvertFromHex}"
                 Style="{StaticResource MaterialDesignGroupBox}">
