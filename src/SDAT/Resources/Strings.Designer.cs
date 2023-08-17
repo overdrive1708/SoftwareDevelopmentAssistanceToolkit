@@ -70,6 +70,24 @@ namespace SDAT.Resources {
         }
         
         /// <summary>
+        ///   変換系 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MenuConvert {
+            get {
+                return ResourceManager.GetString("MenuConvert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   基数変換 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MenuConvertRadix {
+            get {
+                return ResourceManager.GetString("MenuConvertRadix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   ヘルプ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string MenuHelp {
@@ -84,6 +102,15 @@ namespace SDAT.Resources {
         public static string ScreenTitleAboutInfo {
             get {
                 return ResourceManager.GetString("ScreenTitleAboutInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   基数変換 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ScreenTitleConvertRadix {
+            get {
+                return ResourceManager.GetString("ScreenTitleConvertRadix", resourceCulture);
             }
         }
     }

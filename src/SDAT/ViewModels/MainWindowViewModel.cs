@@ -72,6 +72,7 @@ namespace SDAT.ViewModels
             Title = screenName switch
             {
                 "WelcomeInfo" => Core.Resources.Strings.ApplicationName,
+                "ConvertRadix" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleConvertRadix}",
                 "AboutInfo" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleAboutInfo}",
                 _ => Core.Resources.Strings.ApplicationName,
             };

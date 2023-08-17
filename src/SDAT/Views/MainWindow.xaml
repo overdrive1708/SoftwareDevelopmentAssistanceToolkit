@@ -37,6 +37,12 @@
                 materialDesign:MenuAssist.TopLevelMenuItemHeight="25"
                 materialDesign:RippleAssist.IsDisabled="True"
                 DockPanel.Dock="Top">
+                <MenuItem Header="{x:Static resources:Strings.MenuConvert}">
+                    <MenuItem
+                        Command="{Binding CommandTransitionScreen}"
+                        CommandParameter="ConvertRadix"
+                        Header="{x:Static resources:Strings.MenuConvertRadix}" />
+                </MenuItem>
                 <MenuItem Header="{x:Static resources:Strings.MenuHelp}">
                     <MenuItem
                         Command="{Binding CommandTransitionScreen}"
