@@ -72,27 +72,27 @@ namespace SDAT.Modules.ConvertRadix.Resources {
         /// <summary>
         ///   2進数からの変換 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ConversionFromBin {
+        public static string ConvertFromBin {
             get {
-                return ResourceManager.GetString("ConversionFromBin", resourceCulture);
+                return ResourceManager.GetString("ConvertFromBin", resourceCulture);
             }
         }
         
         /// <summary>
         ///   10進数からの変換 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ConversionFromDec {
+        public static string ConvertFromDec {
             get {
-                return ResourceManager.GetString("ConversionFromDec", resourceCulture);
+                return ResourceManager.GetString("ConvertFromDec", resourceCulture);
             }
         }
         
         /// <summary>
         ///   16進数からの変換 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ConversionFromHex {
+        public static string ConvertFromHex {
             get {
-                return ResourceManager.GetString("ConversionFromHex", resourceCulture);
+                return ResourceManager.GetString("ConvertFromHex", resourceCulture);
             }
         }
         

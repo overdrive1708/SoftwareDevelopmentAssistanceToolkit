@@ -97,13 +97,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ConversionFromDec" xml:space="preserve">
+  <data name="ConvertFromDec" xml:space="preserve">
     <value>10進数からの変換</value>
   </data>
-  <data name="ConversionFromHex" xml:space="preserve">
+  <data name="ConvertFromHex" xml:space="preserve">
     <value>16進数からの変換</value>
   </data>
-  <data name="ConversionFromBin" xml:space="preserve">
+  <data name="ConvertFromBin" xml:space="preserve">
     <value>2進数からの変換</value>
   </data>
   <data name="Dec" xml:space="preserve">
