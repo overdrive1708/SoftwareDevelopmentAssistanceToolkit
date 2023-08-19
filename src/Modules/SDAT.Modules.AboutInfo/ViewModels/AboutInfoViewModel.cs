@@ -131,6 +131,14 @@ namespace SDAT.Modules.AboutInfo.ViewModels
             };
             VersionInfoData.Add(versionInfo);
 
+            // バージョン情報表示値の更新(Modules.ConvertRadix)
+            versionInfo = new()
+            {
+                Component = "SDAT.Modules.ConvertRadix.dll",
+                Version = _messageService.GetVersionInfoModulesConvertRadix()
+            };
+            VersionInfoData.Add(versionInfo);
+
             // バージョン情報表示値の更新(Modules.WelcomeInfo)
             versionInfo = new()
             {
