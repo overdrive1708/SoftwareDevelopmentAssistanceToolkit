@@ -65,7 +65,10 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         /// <param name="navigationContext">ナビゲーションに関する情報</param>
         public override void OnNavigatedTo(NavigationContext navigationContext)
         {
-            // 無処理
+            // バインディングデータを初期化する
+            StringBin = string.Empty;
+            StringDec = string.Empty;
+            StringHex = string.Empty;
         }
     }
 }
