@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SDAT.Resources {
+namespace SDAT.Modules.ConvertRadix.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SDAT.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Resources.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Modules.ConvertRadix.Resources.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,56 +61,56 @@ namespace SDAT.Resources {
         }
         
         /// <summary>
-        ///   このソフトウェアについて に類似しているローカライズされた文字列を検索します。
+        ///   2進数 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuAboutInfo {
+        public static string Bin {
             get {
-                return ResourceManager.GetString("MenuAboutInfo", resourceCulture);
+                return ResourceManager.GetString("Bin", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   変換系 に類似しているローカライズされた文字列を検索します。
+        ///   2進数からの変換 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuConvert {
+        public static string ConvertFromBin {
             get {
-                return ResourceManager.GetString("MenuConvert", resourceCulture);
+                return ResourceManager.GetString("ConvertFromBin", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   基数変換 に類似しているローカライズされた文字列を検索します。
+        ///   10進数からの変換 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuConvertRadix {
+        public static string ConvertFromDec {
             get {
-                return ResourceManager.GetString("MenuConvertRadix", resourceCulture);
+                return ResourceManager.GetString("ConvertFromDec", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   ヘルプ に類似しているローカライズされた文字列を検索します。
+        ///   16進数からの変換 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuHelp {
+        public static string ConvertFromHex {
             get {
-                return ResourceManager.GetString("MenuHelp", resourceCulture);
+                return ResourceManager.GetString("ConvertFromHex", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   このソフトウェアについて に類似しているローカライズされた文字列を検索します。
+        ///   10進数 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ScreenTitleAboutInfo {
+        public static string Dec {
             get {
-                return ResourceManager.GetString("ScreenTitleAboutInfo", resourceCulture);
+                return ResourceManager.GetString("Dec", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   基数変換 に類似しているローカライズされた文字列を検索します。
+        ///   16進数 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ScreenTitleConvertRadix {
+        public static string Hex {
             get {
-                return ResourceManager.GetString("ScreenTitleConvertRadix", resourceCulture);
+                return ResourceManager.GetString("Hex", resourceCulture);
             }
         }
     }

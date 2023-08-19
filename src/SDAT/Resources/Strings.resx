@@ -106,4 +106,13 @@
   <data name="ScreenTitleAboutInfo" xml:space="preserve">
     <value>このソフトウェアについて</value>
   </data>
+  <data name="MenuConvert" xml:space="preserve">
+    <value>変換系</value>
+  </data>
+  <data name="MenuConvertRadix" xml:space="preserve">
+    <value>基数変換</value>
+  </data>
+  <data name="ScreenTitleConvertRadix" xml:space="preserve">
+    <value>基数変換</value>
+  </data>
 </root>

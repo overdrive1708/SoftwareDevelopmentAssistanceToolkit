@@ -88,5 +88,41 @@ namespace SDAT.Core.Resources {
                 return ResourceManager.GetString("MessageFatalError", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   数値が入力されていません｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ValidationErrorEmptyNumber {
+            get {
+                return ResourceManager.GetString("ValidationErrorEmptyNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   入力値が32ビット符号なし2進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ValidationErrorNotBinary {
+            get {
+                return ResourceManager.GetString("ValidationErrorNotBinary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   入力値が32ビット符号なし10進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ValidationErrorNotDecimal {
+            get {
+                return ResourceManager.GetString("ValidationErrorNotDecimal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   入力値が32ビット符号なし16進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ValidationErrorNotHexadecimal {
+            get {
+                return ResourceManager.GetString("ValidationErrorNotHexadecimal", resourceCulture);
+            }
+        }
     }
 }

@@ -15,6 +15,12 @@
         string GetVersionInfoCore();
 
         /// <summary>
+        /// バージョン情報取得処理(Modules.ConvertRadix)
+        /// </summary>
+        /// <returns>Modules.WelcomeInfoのバージョン情報</returns>
+        string GetVersionInfoModulesConvertRadix();
+
+        /// <summary>
         /// バージョン情報取得処理(Modules.WelcomeInfo)
         /// </summary>
         /// <returns>Modules.WelcomeInfoのバージョン情報</returns>
