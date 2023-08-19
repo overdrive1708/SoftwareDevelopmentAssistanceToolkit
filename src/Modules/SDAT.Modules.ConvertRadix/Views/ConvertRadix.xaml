@@ -33,7 +33,7 @@
                         <TextBox.Text>
                             <Binding Path="StringBin" UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
-                                    <core:NumberRadixValidationRule StringRadix="Binary" />
+                                    <core:NumberRadixValidationRule StringRadix="Binary" ValidatesOnTargetUpdated="True" />
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
@@ -79,7 +79,7 @@
                         <TextBox.Text>
                             <Binding Path="StringDec" UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
-                                    <core:NumberRadixValidationRule StringRadix="Decimal" />
+                                    <core:NumberRadixValidationRule StringRadix="Decimal" ValidatesOnTargetUpdated="True" />
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
@@ -125,7 +125,7 @@
                         <TextBox.Text>
                             <Binding Path="StringHex" UpdateSourceTrigger="PropertyChanged">
                                 <Binding.ValidationRules>
-                                    <core:NumberRadixValidationRule StringRadix="Hexadecimal" />
+                                    <core:NumberRadixValidationRule StringRadix="Hexadecimal" ValidatesOnTargetUpdated="True" />
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
