@@ -37,6 +37,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -176,15 +184,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SoftwareDevelopmentAssistanceToolkit"
-        "ProductCode" = "8:{AB3A42A2-5A58-4250-A4B8-86E8FCD165EA}"
-        "PackageCode" = "8:{975341EB-EDBC-4FF1-89F0-78C11D93CFF2}"
+        "ProductCode" = "8:{D16C9818-698F-4DC3-B017-7E09C879359C}"
+        "PackageCode" = "8:{6F61EE4E-5A13-4AD4-B2F7-31A3F6A515CC}"
         "UpgradeCode" = "8:{4493E9DA-09B0-4D5B-8209-DA8E88BAF511}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:0.1.0"
+        "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:overdrive1708"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
