@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT", "SDAT\SDAT.csproj", "{2E8C611C-AC4D-4F18-9082-C3FECB709ED0}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0AFCFECB-A248-4FC1-A468-C9A43EE2B008}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{C540AC6D-1576-4D14-A650-90C6F17EE4FD}"
@@ -12,8 +14,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Services", "Services\SDAT.Services\SDAT.Services.csproj", "{A9A6F13C-2C03-4411-9C1A-62F7B193BA5D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Services.Interfaces", "Services\SDAT.Services.Interfaces\SDAT.Services.Interfaces.csproj", "{4294D6CB-777C-4A21-900C-60056B60D47D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT", "SDAT\SDAT.csproj", "{2E8C611C-AC4D-4F18-9082-C3FECB709ED0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Core", "SDAT.Core\SDAT.Core.csproj", "{2A1E8F13-AC15-486F-81AF-D232D87747EE}"
 EndProject
