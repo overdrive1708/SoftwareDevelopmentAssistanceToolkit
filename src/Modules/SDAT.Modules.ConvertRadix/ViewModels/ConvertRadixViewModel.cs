@@ -1,5 +1,7 @@
-﻿using Prism.Regions;
+﻿using Prism.Commands;
+using Prism.Regions;
 using SDAT.Core.Mvvm;
+using SDAT.Services.Interfaces;
 
 namespace SDAT.Modules.ConvertRadix.ViewModels
 {
@@ -99,6 +101,38 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         }
 
         //--------------------------------------------------
+        // バインディングコマンド(スニペット:cmd/cmdg)
+        //--------------------------------------------------
+        /// <summary>
+        /// 基数変換(2進数から)
+        /// </summary>
+        private DelegateCommand _commandConvertFromBin;
+        public DelegateCommand CommandConvertFromBin =>
+            _commandConvertFromBin ?? (_commandConvertFromBin = new DelegateCommand(ExecuteCommandConvertFromBin));
+
+        /// <summary>
+        /// 基数変換(10進数から)
+        /// </summary>
+        private DelegateCommand _commandConvertFromDec;
+        public DelegateCommand CommandConvertFromDec =>
+            _commandConvertFromDec ?? (_commandConvertFromDec = new DelegateCommand(ExecuteCommandConvertFromDec));
+
+        /// <summary>
+        /// 基数変換(16進数から)
+        /// </summary>
+        private DelegateCommand _commandConvertFromHex;
+        public DelegateCommand CommandConvertFromHex =>
+            _commandConvertFromHex ?? (_commandConvertFromHex = new DelegateCommand(ExecuteCommandConvertFromHex));
+
+        //--------------------------------------------------
+        // 内部変数
+        //--------------------------------------------------
+        /// <summary>
+        /// ConvertRadixService
+        /// </summary>
+        private readonly IConvertRadixService _convertRadixService;
+
+        //--------------------------------------------------
         // メソッド
         //--------------------------------------------------
         /// <summary>
@@ -113,10 +147,12 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         /// コンストラクタ
         /// </summary>
         /// <param name="regionManager">IRegionManager</param>
-        public ConvertRadixViewModel(IRegionManager regionManager) :
+        /// <param name="convertRadixService">IConvertRadixService</param>
+        public ConvertRadixViewModel(IRegionManager regionManager, IConvertRadixService convertRadixService) :
             base(regionManager)
         {
-            // 無処理
+            // ConvertRadixServiceの情報を設定する
+            _convertRadixService = convertRadixService;
         }
 
         /// <summary>
@@ -135,6 +171,33 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
             StringHex = string.Empty;
             StringHexToBin = string.Empty;
             StringHexToDec = string.Empty;
+        }
+
+        /// <summary>
+        /// 基数変換(2進数から)コマンド実行処理
+        /// </summary>
+        private void ExecuteCommandConvertFromBin()
+        {
+            StringBinToDec = _convertRadixService.ConvertRadixBinToDec(StringBin);
+            StringBinToHex = _convertRadixService.ConvertRadixBinToHex(StringBin);
+        }
+
+        /// <summary>
+        /// 基数変換(10進数から)コマンド実行処理
+        /// </summary>
+        private void ExecuteCommandConvertFromDec()
+        {
+            StringDecToBin = _convertRadixService.ConvertRadixDecToBin(StringDec);
+            StringDecToHex = _convertRadixService.ConvertRadixDecToHex(StringDec);
+        }
+
+        /// <summary>
+        /// 基数変換(16進数から)コマンド実行処理
+        /// </summary>
+        private void ExecuteCommandConvertFromHex()
+        {
+            StringHexToBin = _convertRadixService.ConvertRadixHexToBin(StringHex);
+            StringHexToDec = _convertRadixService.ConvertRadixHexToDec(StringHex);
         }
     }
 }

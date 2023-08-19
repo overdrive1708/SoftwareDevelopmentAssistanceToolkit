@@ -41,6 +41,7 @@
                     <Button
                         Margin="10,10,10,10"
                         Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
+                        Command="{Binding CommandConvertFromBin}"
                         Style="{StaticResource MaterialDesignIconButton}"
                         ToolTip="{x:Static resources:Strings.ConvertFromBin}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
@@ -89,6 +90,7 @@
                     <Button
                         Margin="10,10,10,10"
                         Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
+                        Command="{Binding CommandConvertFromDec}"
                         Style="{StaticResource MaterialDesignIconButton}"
                         ToolTip="{x:Static resources:Strings.ConvertFromDec}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
@@ -137,6 +139,7 @@
                     <Button
                         Margin="10,10,10,10"
                         Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
+                        Command="{Binding CommandConvertFromHex}"
                         Style="{StaticResource MaterialDesignIconButton}"
                         ToolTip="{x:Static resources:Strings.ConvertFromHex}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
