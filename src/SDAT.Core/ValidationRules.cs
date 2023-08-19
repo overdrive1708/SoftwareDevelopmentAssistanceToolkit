@@ -38,7 +38,7 @@ namespace SDAT.Core
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             // 空白の場合はNGを返す
-            if (string.IsNullOrEmpty(value.ToString()))
+            if (string.IsNullOrEmpty((value ?? "").ToString()))
             {
                 return new ValidationResult(false, Resources.Strings.ValidationErrorEmptyNumber);
             }
@@ -55,7 +55,7 @@ namespace SDAT.Core
             // 32bit整数変換を基数指定で行い､例外が発生する場合は基数が不正と判断する｡
             try
             {
-                _ = Convert.ToUInt32(value.ToString(), convertBase);
+                _ = Convert.ToUInt32((value ?? "").ToString(), convertBase);
             }
             catch
             {
