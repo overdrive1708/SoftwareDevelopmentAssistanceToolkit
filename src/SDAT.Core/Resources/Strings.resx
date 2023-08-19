@@ -109,13 +109,13 @@
 エラーの詳細な情報を表示しますか?</value>
   </data>
   <data name="ValidationErrorNotBinary" xml:space="preserve">
-    <value>入力値が2進数の数値ではありません｡</value>
+    <value>入力値が32ビット符号なし2進数の数値ではありません｡</value>
   </data>
   <data name="ValidationErrorNotDecimal" xml:space="preserve">
-    <value>入力値が10進数の数値ではありません｡</value>
+    <value>入力値が32ビット符号なし10進数の数値ではありません｡</value>
   </data>
   <data name="ValidationErrorNotHexadecimal" xml:space="preserve">
-    <value>入力値が16進数の数値ではありません｡</value>
+    <value>入力値が32ビット符号なし16進数の数値ではありません｡</value>
   </data>
   <data name="ValidationErrorEmptyNumber" xml:space="preserve">
     <value>数値が入力されていません｡</value>

@@ -99,7 +99,7 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
-        ///   入力値が2進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
+        ///   入力値が32ビット符号なし2進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ValidationErrorNotBinary {
             get {
@@ -108,7 +108,7 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
-        ///   入力値が10進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
+        ///   入力値が32ビット符号なし10進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ValidationErrorNotDecimal {
             get {
@@ -117,7 +117,7 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
-        ///   入力値が16進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
+        ///   入力値が32ビット符号なし16進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ValidationErrorNotHexadecimal {
             get {
