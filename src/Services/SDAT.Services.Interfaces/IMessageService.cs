@@ -18,7 +18,7 @@
         /// バージョン情報取得処理(Modules.ConvertRadix)
         /// </summary>
         /// <returns>Modules.WelcomeInfoのバージョン情報</returns>
-        public string GetVersionInfoModulesConvertRadix();
+        string GetVersionInfoModulesConvertRadix();
 
         /// <summary>
         /// バージョン情報取得処理(Modules.WelcomeInfo)
