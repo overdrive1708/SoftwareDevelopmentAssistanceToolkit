@@ -37,6 +37,12 @@ namespace SDAT.Core
         /// <exception cref="NotImplementedException"></exception>
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
+            // 空白の場合はNGを返す
+            if (string.IsNullOrEmpty(value.ToString()))
+            {
+                return new ValidationResult(false, Resources.Strings.ValidationErrorEmptyNumber);
+            }
+
             // 32bit整数変換用基数判定
             int convertBase = StringRadix switch
             {

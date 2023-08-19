@@ -90,6 +90,15 @@ namespace SDAT.Core.Resources {
         }
         
         /// <summary>
+        ///   数値が入力されていません｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ValidationErrorEmptyNumber {
+            get {
+                return ResourceManager.GetString("ValidationErrorEmptyNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   入力値が2進数の数値ではありません｡ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ValidationErrorNotBinary {

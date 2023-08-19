@@ -117,4 +117,7 @@
   <data name="ValidationErrorNotHexadecimal" xml:space="preserve">
     <value>入力値が16進数の数値ではありません｡</value>
   </data>
+  <data name="ValidationErrorEmptyNumber" xml:space="preserve">
+    <value>数値が入力されていません｡</value>
+  </data>
 </root>
