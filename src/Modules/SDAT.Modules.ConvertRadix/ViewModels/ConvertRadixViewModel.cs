@@ -6,6 +6,39 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
     public class ConvertRadixViewModel : RegionViewModelBase
     {
         //--------------------------------------------------
+        // バインディングデータ(スニペット:propp)
+        //--------------------------------------------------
+        /// <summary>
+        /// 2進数からの変換：2進数
+        /// </summary>
+        private string _stringBin;
+        public string StringBin
+        {
+            get { return _stringBin; }
+            set { SetProperty(ref _stringBin, value); }
+        }
+
+        /// <summary>
+        /// 2進数からの変換：10進数
+        /// </summary>
+        private string _stringDec;
+        public string StringDec
+        {
+            get { return _stringDec; }
+            set { SetProperty(ref _stringDec, value); }
+        }
+
+        /// <summary>
+        /// 2進数からの変換：16進数
+        /// </summary>
+        private string _stringHex;
+        public string StringHex
+        {
+            get { return _stringHex; }
+            set { SetProperty(ref _stringHex, value); }
+        }
+
+        //--------------------------------------------------
         // メソッド
         //--------------------------------------------------
         /// <summary>
