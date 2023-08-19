@@ -19,6 +19,26 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         }
 
         /// <summary>
+        /// 2進数からの変換：10進数
+        /// </summary>
+        private string _stringBinToDec;
+        public string StringBinToDec
+        {
+            get { return _stringBinToDec; }
+            set { SetProperty(ref _stringBinToDec, value); }
+        }
+
+        /// <summary>
+        /// 2進数からの変換：16進数
+        /// </summary>
+        private string _stringBinToHex;
+        public string StringBinToHex
+        {
+            get { return _stringBinToHex; }
+            set { SetProperty(ref _stringBinToHex, value); }
+        }
+
+        /// <summary>
         /// 10進数からの変換：10進数
         /// </summary>
         private string _stringDec;
@@ -29,6 +49,26 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         }
 
         /// <summary>
+        /// 10進数からの変換：2進数
+        /// </summary>
+        private string _stringDecToBin;
+        public string StringDecToBin
+        {
+            get { return _stringDecToBin; }
+            set { SetProperty(ref _stringDecToBin, value); }
+        }
+
+        /// <summary>
+        /// 10進数からの変換：16進数
+        /// </summary>
+        private string _stringDecToHex;
+        public string StringDecToHex
+        {
+            get { return _stringDecToHex; }
+            set { SetProperty(ref _stringDecToHex, value); }
+        }
+
+        /// <summary>
         /// 16進数からの変換：16進数
         /// </summary>
         private string _stringHex;
@@ -36,6 +76,26 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         {
             get { return _stringHex; }
             set { SetProperty(ref _stringHex, value); }
+        }
+
+        /// <summary>
+        /// 16進数からの変換：2進数
+        /// </summary>
+        private string _stringHexToBin;
+        public string StringHexToBin
+        {
+            get { return _stringHexToBin; }
+            set { SetProperty(ref _stringHexToBin, value); }
+        }
+
+        /// <summary>
+        /// 16進数からの変換：10進数
+        /// </summary>
+        private string _stringHexToDec;
+        public string StringHexToDec
+        {
+            get { return _stringHexToDec; }
+            set { SetProperty(ref _stringHexToDec, value); }
         }
 
         //--------------------------------------------------
@@ -67,8 +127,14 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         {
             // バインディングデータを初期化する
             StringBin = string.Empty;
+            StringBinToDec = string.Empty;
+            StringBinToHex = string.Empty;
             StringDec = string.Empty;
+            StringDecToBin = string.Empty;
+            StringDecToHex = string.Empty;
             StringHex = string.Empty;
+            StringHexToBin = string.Empty;
+            StringHexToDec = string.Empty;
         }
     }
 }

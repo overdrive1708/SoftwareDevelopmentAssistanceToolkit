@@ -55,13 +55,15 @@
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
                         IsReadOnly="True"
-                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        Text="{Binding StringBinToDec}" />
                     <TextBox
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
                         IsReadOnly="True"
-                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        Text="{Binding StringBinToHex}" />
                 </StackPanel>
             </GroupBox>
             <GroupBox
@@ -101,13 +103,15 @@
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
                         IsReadOnly="True"
-                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        Text="{Binding StringDecToBin}" />
                     <TextBox
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
                         IsReadOnly="True"
-                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        Text="{Binding StringDecToHex}" />
                 </StackPanel>
             </GroupBox>
             <GroupBox
@@ -147,13 +151,15 @@
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
                         IsReadOnly="True"
-                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        Text="{Binding StringHexToBin}" />
                     <TextBox
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
                         IsReadOnly="True"
-                        Style="{StaticResource MaterialDesignFilledTextBox}" />
+                        Style="{StaticResource MaterialDesignFilledTextBox}"
+                        Text="{Binding StringHexToDec}" />
                 </StackPanel>
             </GroupBox>
         </StackPanel>
