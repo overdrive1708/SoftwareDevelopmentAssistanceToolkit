@@ -13,6 +13,9 @@
                                      IsDesignTimeCreatable=True}"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
+    <UserControl.Resources>
+        <core:IsAllFalseConverter x:Key="IsAllFalseConverter" />
+    </UserControl.Resources>
     <Grid Margin="10,10,10,10" HorizontalAlignment="Center">
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal">
             <GroupBox
@@ -22,6 +25,7 @@
                 Style="{StaticResource MaterialDesignGroupBox}">
                 <StackPanel>
                     <TextBox
+                        x:Name="TextBoxFromBin"
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
@@ -40,6 +44,11 @@
                         Style="{StaticResource MaterialDesignIconButton}"
                         ToolTip="{x:Static resources:Strings.ConvertFromBin}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
+                        <Button.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromBin" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </Button.IsEnabled>
                     </Button>
                     <TextBox
                         Margin="10,10,10,10"
@@ -62,6 +71,7 @@
                 Style="{StaticResource MaterialDesignGroupBox}">
                 <StackPanel>
                     <TextBox
+                        x:Name="TextBoxFromDec"
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
@@ -80,6 +90,11 @@
                         Style="{StaticResource MaterialDesignIconButton}"
                         ToolTip="{x:Static resources:Strings.ConvertFromDec}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
+                        <Button.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromDec" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </Button.IsEnabled>
                     </Button>
                     <TextBox
                         Margin="10,10,10,10"
@@ -102,6 +117,7 @@
                 Style="{StaticResource MaterialDesignGroupBox}">
                 <StackPanel>
                     <TextBox
+                        x:Name="TextBoxFromHex"
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
@@ -120,6 +136,11 @@
                         Style="{StaticResource MaterialDesignIconButton}"
                         ToolTip="{x:Static resources:Strings.ConvertFromHex}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
+                        <Button.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromHex" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </Button.IsEnabled>
                     </Button>
                     <TextBox
                         Margin="10,10,10,10"
