@@ -19,7 +19,7 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         }
 
         /// <summary>
-        /// 2進数からの変換：10進数
+        /// 10進数からの変換：10進数
         /// </summary>
         private string _stringDec;
         public string StringDec
@@ -29,7 +29,7 @@ namespace SDAT.Modules.ConvertRadix.ViewModels
         }
 
         /// <summary>
-        /// 2進数からの変換：16進数
+        /// 16進数からの変換：16進数
         /// </summary>
         private string _stringHex;
         public string StringHex
