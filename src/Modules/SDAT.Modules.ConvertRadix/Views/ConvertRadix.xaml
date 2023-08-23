@@ -2,6 +2,7 @@
     x:Class="SDAT.Modules.ConvertRadix.Views.ConvertRadix"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:bh="http://schemas.microsoft.com/xaml/behaviors"
     xmlns:core="clr-namespace:SDAT.Core;assembly=SDAT.Core"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -37,19 +38,18 @@
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
+                        <bh:Interaction.Triggers>
+                            <bh:PropertyChangedTrigger Binding="{Binding StringBin}">
+                                <bh:InvokeCommandAction Command="{Binding CommandConvertFromBin}" />
+                            </bh:PropertyChangedTrigger>
+                        </bh:Interaction.Triggers>
                     </TextBox>
                     <Button
                         Margin="10,10,10,10"
                         Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
-                        Command="{Binding CommandConvertFromBin}"
-                        Style="{StaticResource MaterialDesignIconButton}"
-                        ToolTip="{x:Static resources:Strings.ConvertFromBin}">
+                        IsEnabled="False"
+                        Style="{StaticResource MaterialDesignIconButton}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
-                        <Button.IsEnabled>
-                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
-                                <Binding ElementName="TextBoxFromBin" Path="(Validation.HasError)" />
-                            </MultiBinding>
-                        </Button.IsEnabled>
                     </Button>
                     <TextBox
                         Margin="10,10,10,10"
@@ -57,14 +57,26 @@
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
                         IsReadOnly="True"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
-                        Text="{Binding StringBinToDec}" />
+                        Text="{Binding StringBinToDec}">
+                        <TextBox.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromBin" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </TextBox.IsEnabled>
+                    </TextBox>
                     <TextBox
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
                         IsReadOnly="True"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
-                        Text="{Binding StringBinToHex}" />
+                        Text="{Binding StringBinToHex}">
+                        <TextBox.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromBin" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </TextBox.IsEnabled>
+                    </TextBox>
                 </StackPanel>
             </GroupBox>
             <GroupBox
@@ -86,19 +98,18 @@
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
+                        <bh:Interaction.Triggers>
+                            <bh:PropertyChangedTrigger Binding="{Binding StringDec}">
+                                <bh:InvokeCommandAction Command="{Binding CommandConvertFromDec}" />
+                            </bh:PropertyChangedTrigger>
+                        </bh:Interaction.Triggers>
                     </TextBox>
                     <Button
                         Margin="10,10,10,10"
                         Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
-                        Command="{Binding CommandConvertFromDec}"
-                        Style="{StaticResource MaterialDesignIconButton}"
-                        ToolTip="{x:Static resources:Strings.ConvertFromDec}">
+                        IsEnabled="False"
+                        Style="{StaticResource MaterialDesignIconButton}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
-                        <Button.IsEnabled>
-                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
-                                <Binding ElementName="TextBoxFromDec" Path="(Validation.HasError)" />
-                            </MultiBinding>
-                        </Button.IsEnabled>
                     </Button>
                     <TextBox
                         Margin="10,10,10,10"
@@ -106,14 +117,26 @@
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
                         IsReadOnly="True"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
-                        Text="{Binding StringDecToBin}" />
+                        Text="{Binding StringDecToBin}">
+                        <TextBox.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromDec" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </TextBox.IsEnabled>
+                    </TextBox>
                     <TextBox
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Hex}"
                         IsReadOnly="True"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
-                        Text="{Binding StringDecToHex}" />
+                        Text="{Binding StringDecToHex}">
+                        <TextBox.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromDec" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </TextBox.IsEnabled>
+                    </TextBox>
                 </StackPanel>
             </GroupBox>
             <GroupBox
@@ -135,19 +158,18 @@
                                 </Binding.ValidationRules>
                             </Binding>
                         </TextBox.Text>
+                        <bh:Interaction.Triggers>
+                            <bh:PropertyChangedTrigger Binding="{Binding StringHex}">
+                                <bh:InvokeCommandAction Command="{Binding CommandConvertFromHex}" />
+                            </bh:PropertyChangedTrigger>
+                        </bh:Interaction.Triggers>
                     </TextBox>
                     <Button
                         Margin="10,10,10,10"
                         Background="{DynamicResource MaterialDesignTextFieldBoxBackground}"
-                        Command="{Binding CommandConvertFromHex}"
-                        Style="{StaticResource MaterialDesignIconButton}"
-                        ToolTip="{x:Static resources:Strings.ConvertFromHex}">
+                        IsEnabled="False"
+                        Style="{StaticResource MaterialDesignIconButton}">
                         <materialDesign:PackIcon Kind="ArrowDownBold" />
-                        <Button.IsEnabled>
-                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
-                                <Binding ElementName="TextBoxFromHex" Path="(Validation.HasError)" />
-                            </MultiBinding>
-                        </Button.IsEnabled>
                     </Button>
                     <TextBox
                         Margin="10,10,10,10"
@@ -155,14 +177,26 @@
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Bin}"
                         IsReadOnly="True"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
-                        Text="{Binding StringHexToBin}" />
+                        Text="{Binding StringHexToBin}">
+                        <TextBox.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromHex" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </TextBox.IsEnabled>
+                    </TextBox>
                     <TextBox
                         Margin="10,10,10,10"
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="{x:Static resources:Strings.Dec}"
                         IsReadOnly="True"
                         Style="{StaticResource MaterialDesignFilledTextBox}"
-                        Text="{Binding StringHexToDec}" />
+                        Text="{Binding StringHexToDec}">
+                        <TextBox.IsEnabled>
+                            <MultiBinding Converter="{StaticResource IsAllFalseConverter}">
+                                <Binding ElementName="TextBoxFromHex" Path="(Validation.HasError)" />
+                            </MultiBinding>
+                        </TextBox.IsEnabled>
+                    </TextBox>
                 </StackPanel>
             </GroupBox>
         </StackPanel>
