@@ -1,10 +1,14 @@
 ﻿using Prism.Commands;
-using Prism.Mvvm;
-using SDAT.Core;
+using Prism.Regions;
+using SDAT.Core.Mvvm;
+using SDAT.Services.Interfaces;
+using System;
+using System.Threading.Tasks;
+using System.Windows.Threading;
 
 namespace SDAT.Modules.CompareListItem.ViewModels
 {
-    public class CompareListItemViewModel : BindableBase
+    public class CompareListItemViewModel : RegionViewModelBase
     {
         //--------------------------------------------------
         // バインディングデータ(スニペット:propp)
@@ -20,43 +24,43 @@ namespace SDAT.Modules.CompareListItem.ViewModels
         }
 
         /// <summary>
-        /// 変更前定義
+        /// 変更前リスト項目
         /// </summary>
-        private string _beforeDefines = string.Empty;
-        public string BeforeDefines
+        private string _beforeListItems = string.Empty;
+        public string BeforeListItems
         {
-            get { return _beforeDefines; }
-            set { SetProperty(ref _beforeDefines, value); }
+            get { return _beforeListItems; }
+            set { SetProperty(ref _beforeListItems, value); }
         }
 
         /// <summary>
-        /// 変更後定義
+        /// 変更後リスト項目
         /// </summary>
-        private string _afterDefines = string.Empty;
-        public string AfterDefines
+        private string _afterListItems = string.Empty;
+        public string AfterListItems
         {
-            get { return _afterDefines; }
-            set { SetProperty(ref _afterDefines, value); }
+            get { return _afterListItems; }
+            set { SetProperty(ref _afterListItems, value); }
         }
 
         /// <summary>
-        /// 追加定義
+        /// 追加リスト項目
         /// </summary>
-        private string _addDefines = string.Empty;
-        public string AddDefines
+        private string _addListItems = string.Empty;
+        public string AddListItems
         {
-            get { return _addDefines; }
-            set { SetProperty(ref _addDefines, value); }
+            get { return _addListItems; }
+            set { SetProperty(ref _addListItems, value); }
         }
 
         /// <summary>
-        /// 削除定義
+        /// 削除リスト項目
         /// </summary>
-        private string _deleteDefines = string.Empty;
-        public string DeleteDefines
+        private string _deleteListItems = string.Empty;
+        public string DeleteListItems
         {
-            get { return _deleteDefines; }
-            set { SetProperty(ref _deleteDefines, value); }
+            get { return _deleteListItems; }
+            set { SetProperty(ref _deleteListItems, value); }
         }
 
         /// <summary>
@@ -90,13 +94,23 @@ namespace SDAT.Modules.CompareListItem.ViewModels
         }
 
         /// <summary>
-        /// 進捗状況データ
+        /// 比較実行ボタンプログレスバー不定フラグ
         /// </summary>
-        private ProgressInfo _progressInfoData = new();
-        public ProgressInfo ProgressInfoData
+        private bool _isProgressIndeterminate;
+        public bool IsProgressIndeterminate
         {
-            get { return _progressInfoData; }
-            set { SetProperty(ref _progressInfoData, value); }
+            get { return _isProgressIndeterminate; }
+            set { SetProperty(ref _isProgressIndeterminate, value); }
+        }
+
+        /// <summary>
+        /// 現在進捗率
+        /// </summary>
+        private int _nowProgress = 0;
+        public int NowProgress
+        {
+            get { return _nowProgress; }
+            set { SetProperty(ref _nowProgress, value); }
         }
 
         //--------------------------------------------------
@@ -110,10 +124,23 @@ namespace SDAT.Modules.CompareListItem.ViewModels
             _commandCompare ?? (_commandCompare = new DelegateCommand(ExecuteCommandCompare));
 
         //--------------------------------------------------
+        // 内部変数
+        //--------------------------------------------------
+        /// <summary>
+        /// 比較完了後操作有効待ちタイマ
+        /// </summary>
+        private readonly DispatcherTimer _timerCompareEnableWait;
+
+        /// <summary>
+        /// CompareService
+        /// </summary>
+        private readonly ICompareListItemService _compareService;
+
+        //--------------------------------------------------
         // メソッド
         //--------------------------------------------------
         /// <summary>
-        /// コンストラクタ
+        /// コンストラクタ(XAMLデザイナー用)
         /// </summary>
         public CompareListItemViewModel()
         {
@@ -121,11 +148,84 @@ namespace SDAT.Modules.CompareListItem.ViewModels
         }
 
         /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="regionManager">IRegionManager</param>
+        /// <param name="compareService">ICompareService</param>
+        public CompareListItemViewModel(IRegionManager regionManager, ICompareListItemService compareService) :
+            base(regionManager)
+        {
+            // CompareServiceの情報を設定する
+            _compareService = compareService;
+
+            // タイマ設定
+            _timerCompareEnableWait = new DispatcherTimer
+            {
+                Interval = new TimeSpan(0, 0, 1)
+            };
+            _timerCompareEnableWait.Tick += new EventHandler(TimeoutCompareEnableWait);
+        }
+
+        /// <summary>
         /// 比較実行コマンド実行処理
         /// </summary>
-        private void ExecuteCommandCompare()
+        private async void ExecuteCommandCompare()
         {
-            // TODO:処理実装
+            CompareResult compareResult;
+            Progress<int> progress = new(OnProgressChanged);
+
+            // 比較開始
+            IsEnableCompare = false;
+            IsEnableInput = false;
+            IsProgressIndeterminate = true;
+            IsProgressIndicatorVisible = true;
+            CompareState = Resources.Strings.MessageProcessing;
+
+            // 比較実施
+            await Task.Run(() =>
+            {
+                compareResult = _compareService.GetListItemCompareResult(BeforeListItems, AfterListItems, progress);
+                AddListItems = compareResult.AddListItems;
+                DeleteListItems = compareResult.DeleteListItems;
+            });
+            
+            // 比較完了
+            CompareState = Resources.Strings.MessageComplete;
+            IsEnableInput = true;
+            _timerCompareEnableWait.Start();
+        }
+
+        /// <summary>
+        /// 比較完了後操作有効待ちタイマのタイムアウト処理
+        /// </summary>
+        /// <param name="sender">イベントソース</param>
+        /// <param name="e">イベントデータ</param>
+        private void TimeoutCompareEnableWait(object sender, EventArgs e)
+        {
+            _timerCompareEnableWait.Stop();
+            CompareState = Resources.Strings.Compare;
+            IsEnableCompare = true;
+            IsProgressIndicatorVisible = false;
+            IsProgressIndeterminate = false;
+        }
+
+        /// <summary>
+        /// 進捗更新処理
+        /// </summary>
+        /// <param name="percentage">進捗率</param>
+        private void OnProgressChanged(int percentage)
+        {
+            if (percentage == ICompareListItemService.ProgressUnknown)
+            {
+                IsProgressIndeterminate = true;
+                CompareState = Resources.Strings.MessageProcessing;
+            }
+            else
+            {
+                IsProgressIndeterminate = false;
+                NowProgress = percentage;
+                CompareState = $"{Resources.Strings.MessageProcessing}({percentage}%)";
+            }
         }
     }
 }

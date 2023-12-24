@@ -27,6 +27,7 @@ namespace SDAT
         {
             containerRegistry.RegisterSingleton<IMessageService, MessageService>();
             containerRegistry.RegisterSingleton<IConvertRadixService, ConvertRadixService>();
+            containerRegistry.RegisterSingleton<ICompareListItemService, CompareListItemService>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)

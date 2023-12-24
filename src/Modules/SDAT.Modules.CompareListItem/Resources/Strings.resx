@@ -97,19 +97,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BeforeDefinition" xml:space="preserve">
-    <value>変更前定義</value>
+  <data name="BeforeListItems" xml:space="preserve">
+    <value>変更前リスト項目</value>
   </data>
-  <data name="AfterDefinition" xml:space="preserve">
-    <value>変更後定義</value>
+  <data name="AfterListItems" xml:space="preserve">
+    <value>変更後リスト項目</value>
   </data>
-  <data name="AddDefinition" xml:space="preserve">
-    <value>追加定義</value>
+  <data name="AddListItems" xml:space="preserve">
+    <value>追加リスト項目</value>
   </data>
-  <data name="DeleteDefinition" xml:space="preserve">
-    <value>削除定義</value>
+  <data name="DeleteListItems" xml:space="preserve">
+    <value>削除リスト項目</value>
   </data>
   <data name="Compare" xml:space="preserve">
     <value>比較</value>
+  </data>
+  <data name="MessageProcessing" xml:space="preserve">
+    <value>処理中です｡</value>
+  </data>
+  <data name="MessageComplete" xml:space="preserve">
+    <value>完了しました｡</value>
   </data>
 </root>

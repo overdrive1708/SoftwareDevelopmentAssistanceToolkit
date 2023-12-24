@@ -61,29 +61,29 @@ namespace SDAT.Modules.CompareListItem.Resources {
         }
         
         /// <summary>
-        ///   追加定義 に類似しているローカライズされた文字列を検索します。
+        ///   追加リスト項目 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string AddDefinition {
+        public static string AddListItems {
             get {
-                return ResourceManager.GetString("AddDefinition", resourceCulture);
+                return ResourceManager.GetString("AddListItems", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   変更後定義 に類似しているローカライズされた文字列を検索します。
+        ///   変更後リスト項目 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string AfterDefinition {
+        public static string AfterListItems {
             get {
-                return ResourceManager.GetString("AfterDefinition", resourceCulture);
+                return ResourceManager.GetString("AfterListItems", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   変更前定義 に類似しているローカライズされた文字列を検索します。
+        ///   変更前リスト項目 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string BeforeDefinition {
+        public static string BeforeListItems {
             get {
-                return ResourceManager.GetString("BeforeDefinition", resourceCulture);
+                return ResourceManager.GetString("BeforeListItems", resourceCulture);
             }
         }
         
@@ -97,11 +97,29 @@ namespace SDAT.Modules.CompareListItem.Resources {
         }
         
         /// <summary>
-        ///   削除定義 に類似しているローカライズされた文字列を検索します。
+        ///   削除リスト項目 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string DeleteDefinition {
+        public static string DeleteListItems {
             get {
-                return ResourceManager.GetString("DeleteDefinition", resourceCulture);
+                return ResourceManager.GetString("DeleteListItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   完了しました｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageComplete {
+            get {
+                return ResourceManager.GetString("MessageComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   処理中です｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageProcessing {
+            get {
+                return ResourceManager.GetString("MessageProcessing", resourceCulture);
             }
         }
     }
