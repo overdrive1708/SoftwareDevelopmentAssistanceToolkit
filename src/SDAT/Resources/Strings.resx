@@ -115,4 +115,19 @@
   <data name="ScreenTitleConvertRadix" xml:space="preserve">
     <value>基数変換</value>
   </data>
+  <data name="MenuCompare" xml:space="preserve">
+    <value>比較系</value>
+  </data>
+  <data name="MenuCompareListItem" xml:space="preserve">
+    <value>リスト項目比較</value>
+  </data>
+  <data name="MenuCompareCLangDefine" xml:space="preserve">
+    <value>C言語定義比較</value>
+  </data>
+  <data name="ScreenTitleCompareListItem" xml:space="preserve">
+    <value>リスト項目比較</value>
+  </data>
+  <data name="ScreenTitleCompareCLangDefine" xml:space="preserve">
+    <value>C言語定義比較</value>
+  </data>
 </root>

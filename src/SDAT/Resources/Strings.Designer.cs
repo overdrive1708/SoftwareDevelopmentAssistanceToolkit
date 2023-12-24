@@ -70,6 +70,33 @@ namespace SDAT.Resources {
         }
         
         /// <summary>
+        ///   比較系 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MenuCompare {
+            get {
+                return ResourceManager.GetString("MenuCompare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   C言語定義比較 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MenuCompareCLangDefine {
+            get {
+                return ResourceManager.GetString("MenuCompareCLangDefine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   リスト項目比較 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MenuCompareListItem {
+            get {
+                return ResourceManager.GetString("MenuCompareListItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   変換系 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string MenuConvert {
@@ -102,6 +129,24 @@ namespace SDAT.Resources {
         public static string ScreenTitleAboutInfo {
             get {
                 return ResourceManager.GetString("ScreenTitleAboutInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   C言語定義比較 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ScreenTitleCompareCLangDefine {
+            get {
+                return ResourceManager.GetString("ScreenTitleCompareCLangDefine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   リスト項目比較 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ScreenTitleCompareListItem {
+            get {
+                return ResourceManager.GetString("ScreenTitleCompareListItem", resourceCulture);
             }
         }
         
