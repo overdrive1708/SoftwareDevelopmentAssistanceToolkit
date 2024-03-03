@@ -27,6 +27,12 @@
         string GetVersionInfoModulesCompareListItem();
 
         /// <summary>
+        /// バージョン情報取得処理(Modules.CompareCLangDefine)
+        /// </summary>
+        /// <returns>Modules.CompareCLangDefineのバージョン情報</returns>
+        string GetVersionInfoModulesCompareCLangDefine();
+
+        /// <summary>
         /// バージョン情報取得処理(Modules.WelcomeInfo)
         /// </summary>
         /// <returns>Modules.WelcomeInfoのバージョン情報</returns>

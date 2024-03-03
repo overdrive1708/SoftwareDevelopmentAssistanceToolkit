@@ -147,6 +147,14 @@ namespace SDAT.Modules.AboutInfo.ViewModels
             };
             VersionInfoData.Add(versionInfo);
 
+            // バージョン情報表示値の更新(Modules.CompareCLangDefine)
+            versionInfo = new()
+            {
+                Component = "SDAT.Modules.CompareCLangDefine.dll",
+                Version = _messageService.GetVersionInfoModulesCompareCLangDefine()
+            };
+            VersionInfoData.Add(versionInfo);
+
             // バージョン情報表示値の更新(Modules.WelcomeInfo)
             versionInfo = new()
             {
