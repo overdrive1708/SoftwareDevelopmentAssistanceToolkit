@@ -20,16 +20,6 @@ namespace SDAT.Services
         /// </summary>
         private List<string> _afterItemList;
 
-        /// <summary>
-        /// 進捗率計算用現在処理数
-        /// </summary>
-        private int _progressNow;
-
-        /// <summary>
-        /// 進捗率計算用総処理数
-        /// </summary>
-        private int _progressAll;
-
         //--------------------------------------------------
         // メソッド
         //--------------------------------------------------
