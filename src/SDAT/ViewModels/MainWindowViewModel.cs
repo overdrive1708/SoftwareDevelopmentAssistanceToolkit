@@ -76,7 +76,7 @@ namespace SDAT.ViewModels
                         "WelcomeInfo" => Core.Resources.Strings.ApplicationName,
                         "ConvertRadix" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleConvertRadix}",
                         "CompareListItem" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleCompareListItem}",
-                        "CompareClangDefine" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleCompareCLangDefine}",
+                        "CompareCLangDefine" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleCompareCLangDefine}",
                         "AboutInfo" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleAboutInfo}",
                         _ => Core.Resources.Strings.ApplicationName,
                     };

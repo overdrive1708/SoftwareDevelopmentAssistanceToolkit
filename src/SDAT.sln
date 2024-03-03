@@ -25,7 +25,9 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Inst
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.ConvertRadix", "Modules\SDAT.Modules.ConvertRadix\SDAT.Modules.ConvertRadix.csproj", "{06039171-3679-433C-8FB3-407CA5AA6C2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDAT.Modules.CompareListItem", "Modules\SDAT.Modules.CompareListItem\SDAT.Modules.CompareListItem.csproj", "{EFAA0E36-2709-40E2-BAAF-5D98AD14CA7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.CompareListItem", "Modules\SDAT.Modules.CompareListItem\SDAT.Modules.CompareListItem.csproj", "{EFAA0E36-2709-40E2-BAAF-5D98AD14CA7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDAT.Modules.CompareCLangDefine", "Modules\SDAT.Modules.CompareCLangDefine\SDAT.Modules.CompareCLangDefine.csproj", "{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{EFAA0E36-2709-40E2-BAAF-5D98AD14CA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFAA0E36-2709-40E2-BAAF-5D98AD14CA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFAA0E36-2709-40E2-BAAF-5D98AD14CA7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{B9587C30-F476-40A5-9FC5-3185C0A4BB0B} = {C540AC6D-1576-4D14-A650-90C6F17EE4FD}
 		{06039171-3679-433C-8FB3-407CA5AA6C2B} = {C540AC6D-1576-4D14-A650-90C6F17EE4FD}
 		{EFAA0E36-2709-40E2-BAAF-5D98AD14CA7D} = {C540AC6D-1576-4D14-A650-90C6F17EE4FD}
+		{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4} = {C540AC6D-1576-4D14-A650-90C6F17EE4FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		RESX_NeutralResourcesLanguage = ja-JP

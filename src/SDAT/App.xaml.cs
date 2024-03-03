@@ -1,6 +1,7 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using SDAT.Modules.AboutInfo;
+using SDAT.Modules.CompareCLangDefine;
 using SDAT.Modules.CompareListItem;
 using SDAT.Modules.ConvertRadix;
 using SDAT.Modules.WelcomeInfo;
@@ -36,6 +37,7 @@ namespace SDAT
             moduleCatalog.AddModule<AboutInfoModule>();
             moduleCatalog.AddModule<ConvertRadixModule>();
             moduleCatalog.AddModule<CompareListItemModule>();
+            moduleCatalog.AddModule<CompareCLangDefineModule>();
         }
 
         /// <summary>

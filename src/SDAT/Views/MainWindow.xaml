@@ -51,7 +51,7 @@
                             Header="{x:Static resources:Strings.MenuCompareListItem}" />
                         <MenuItem
                             Command="{Binding CommandTransitionScreen}"
-                            CommandParameter="CompareClangDefine"
+                            CommandParameter="CompareCLangDefine"
                             Header="{x:Static resources:Strings.MenuCompareCLangDefine}" />
                     </MenuItem>
                     <MenuItem Header="{x:Static resources:Strings.MenuHelp}">
