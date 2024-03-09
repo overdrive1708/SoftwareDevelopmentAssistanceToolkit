@@ -44,6 +44,16 @@
                             CommandParameter="ConvertRadix"
                             Header="{x:Static resources:Strings.MenuConvertRadix}" />
                     </MenuItem>
+                    <MenuItem Header="{x:Static resources:Strings.MenuCompare}">
+                        <MenuItem
+                            Command="{Binding CommandTransitionScreen}"
+                            CommandParameter="CompareListItem"
+                            Header="{x:Static resources:Strings.MenuCompareListItem}" />
+                        <MenuItem
+                            Command="{Binding CommandTransitionScreen}"
+                            CommandParameter="CompareCLangDefine"
+                            Header="{x:Static resources:Strings.MenuCompareCLangDefine}" />
+                    </MenuItem>
                     <MenuItem Header="{x:Static resources:Strings.MenuHelp}">
                         <MenuItem
                             Command="{Binding CommandTransitionScreen}"

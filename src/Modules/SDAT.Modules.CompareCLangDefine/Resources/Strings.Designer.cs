@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SDAT.Resources {
+namespace SDAT.Modules.CompareCLangDefine.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SDAT.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Resources.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SDAT.Modules.CompareCLangDefine.Resources.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,101 +61,92 @@ namespace SDAT.Resources {
         }
         
         /// <summary>
-        ///   このソフトウェアについて に類似しているローカライズされた文字列を検索します。
+        ///   追加定義 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuAboutInfo {
+        public static string AddDefinition {
             get {
-                return ResourceManager.GetString("MenuAboutInfo", resourceCulture);
+                return ResourceManager.GetString("AddDefinition", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   比較系 に類似しているローカライズされた文字列を検索します。
+        ///   変更後定義 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuCompare {
+        public static string AfterDefinition {
             get {
-                return ResourceManager.GetString("MenuCompare", resourceCulture);
+                return ResourceManager.GetString("AfterDefinition", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   C言語定義比較 に類似しているローカライズされた文字列を検索します。
+        ///   変更後の値 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuCompareCLangDefine {
+        public static string AfterValue {
             get {
-                return ResourceManager.GetString("MenuCompareCLangDefine", resourceCulture);
+                return ResourceManager.GetString("AfterValue", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   リスト項目比較 に類似しているローカライズされた文字列を検索します。
+        ///   変更前定義 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuCompareListItem {
+        public static string BeforeDefinition {
             get {
-                return ResourceManager.GetString("MenuCompareListItem", resourceCulture);
+                return ResourceManager.GetString("BeforeDefinition", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   変換系 に類似しているローカライズされた文字列を検索します。
+        ///   変更前の値 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuConvert {
+        public static string BeforeValue {
             get {
-                return ResourceManager.GetString("MenuConvert", resourceCulture);
+                return ResourceManager.GetString("BeforeValue", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   基数変換 に類似しているローカライズされた文字列を検索します。
+        ///   変更定義 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuConvertRadix {
+        public static string ChangeDefinition {
             get {
-                return ResourceManager.GetString("MenuConvertRadix", resourceCulture);
+                return ResourceManager.GetString("ChangeDefinition", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   ヘルプ に類似しているローカライズされた文字列を検索します。
+        ///   比較 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string MenuHelp {
+        public static string Compare {
             get {
-                return ResourceManager.GetString("MenuHelp", resourceCulture);
+                return ResourceManager.GetString("Compare", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   このソフトウェアについて に類似しているローカライズされた文字列を検索します。
+        ///   削除定義 に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ScreenTitleAboutInfo {
+        public static string DeleteDefinition {
             get {
-                return ResourceManager.GetString("ScreenTitleAboutInfo", resourceCulture);
+                return ResourceManager.GetString("DeleteDefinition", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   C言語定義比較 に類似しているローカライズされた文字列を検索します。
+        ///   完了しました｡ に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ScreenTitleCompareCLangDefine {
+        public static string MessageComplete {
             get {
-                return ResourceManager.GetString("ScreenTitleCompareCLangDefine", resourceCulture);
+                return ResourceManager.GetString("MessageComplete", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   リスト項目比較 に類似しているローカライズされた文字列を検索します。
+        ///   処理中です｡ に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ScreenTitleCompareListItem {
+        public static string MessageProcessing {
             get {
-                return ResourceManager.GetString("ScreenTitleCompareListItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   基数変換 に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        public static string ScreenTitleConvertRadix {
-            get {
-                return ResourceManager.GetString("ScreenTitleConvertRadix", resourceCulture);
+                return ResourceManager.GetString("MessageProcessing", resourceCulture);
             }
         }
     }

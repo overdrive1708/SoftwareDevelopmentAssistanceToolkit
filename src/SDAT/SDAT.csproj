@@ -16,6 +16,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modules\SDAT.Modules.AboutInfo\SDAT.Modules.AboutInfo.csproj" />
+    <ProjectReference Include="..\Modules\SDAT.Modules.CompareCLangDefine\SDAT.Modules.CompareCLangDefine.csproj" />
+    <ProjectReference Include="..\Modules\SDAT.Modules.CompareListItem\SDAT.Modules.CompareListItem.csproj" />
     <ProjectReference Include="..\Modules\SDAT.Modules.ConvertRadix\SDAT.Modules.ConvertRadix.csproj" />
     <ProjectReference Include="..\Modules\SDAT.Modules.WelcomeInfo\SDAT.Modules.WelcomeInfo.csproj" />
     <ProjectReference Include="..\SDAT.Core\SDAT.Core.csproj" />

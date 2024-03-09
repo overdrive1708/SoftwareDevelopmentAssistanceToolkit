@@ -1,6 +1,8 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using SDAT.Modules.AboutInfo;
+using SDAT.Modules.CompareCLangDefine;
+using SDAT.Modules.CompareListItem;
 using SDAT.Modules.ConvertRadix;
 using SDAT.Modules.WelcomeInfo;
 using SDAT.Services;
@@ -26,6 +28,8 @@ namespace SDAT
         {
             containerRegistry.RegisterSingleton<IMessageService, MessageService>();
             containerRegistry.RegisterSingleton<IConvertRadixService, ConvertRadixService>();
+            containerRegistry.RegisterSingleton<ICompareListItemService, CompareListItemService>();
+            containerRegistry.RegisterSingleton<ICompareCLangDefineService, CompareCLangDefineService>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
@@ -33,6 +37,8 @@ namespace SDAT
             moduleCatalog.AddModule<WelcomeInfoModule>();
             moduleCatalog.AddModule<AboutInfoModule>();
             moduleCatalog.AddModule<ConvertRadixModule>();
+            moduleCatalog.AddModule<CompareListItemModule>();
+            moduleCatalog.AddModule<CompareCLangDefineModule>();
         }
 
         /// <summary>

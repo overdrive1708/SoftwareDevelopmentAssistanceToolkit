@@ -27,10 +27,28 @@ namespace SDAT.Services
         /// <summary>
         /// バージョン情報取得処理(Modules.ConvertRadix)
         /// </summary>
-        /// <returns>Modules.WelcomeInfoのバージョン情報</returns>
+        /// <returns>Modules.ConvertRadixのバージョン情報</returns>
         public string GetVersionInfoModulesConvertRadix()
         {
             return GetVersionInfo("SDAT.Modules.ConvertRadix");
+        }
+
+        /// <summary>
+        /// バージョン情報取得処理(Modules.CompareListItem)
+        /// </summary>
+        /// <returns>Modules.CompareListItemのバージョン情報</returns>
+        public string GetVersionInfoModulesCompareListItem()
+        {
+            return GetVersionInfo("SDAT.Modules.CompareListItem");
+        }
+
+        /// <summary>
+        /// バージョン情報取得処理(Modules.CompareCLangDefine)
+        /// </summary>
+        /// <returns>Modules.CompareCLangDefineのバージョン情報</returns>
+        public string GetVersionInfoModulesCompareCLangDefine()
+        {
+            return GetVersionInfo("SDAT.Modules.CompareCLangDefine");
         }
 
         /// <summary>

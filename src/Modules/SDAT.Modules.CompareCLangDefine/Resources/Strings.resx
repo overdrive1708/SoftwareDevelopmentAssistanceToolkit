@@ -97,37 +97,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MenuHelp" xml:space="preserve">
-    <value>ヘルプ</value>
+  <data name="BeforeDefinition" xml:space="preserve">
+    <value>変更前定義</value>
   </data>
-  <data name="MenuAboutInfo" xml:space="preserve">
-    <value>このソフトウェアについて</value>
+  <data name="AfterDefinition" xml:space="preserve">
+    <value>変更後定義</value>
   </data>
-  <data name="ScreenTitleAboutInfo" xml:space="preserve">
-    <value>このソフトウェアについて</value>
+  <data name="AddDefinition" xml:space="preserve">
+    <value>追加定義</value>
   </data>
-  <data name="MenuConvert" xml:space="preserve">
-    <value>変換系</value>
+  <data name="DeleteDefinition" xml:space="preserve">
+    <value>削除定義</value>
   </data>
-  <data name="MenuConvertRadix" xml:space="preserve">
-    <value>基数変換</value>
+  <data name="ChangeDefinition" xml:space="preserve">
+    <value>変更定義</value>
   </data>
-  <data name="ScreenTitleConvertRadix" xml:space="preserve">
-    <value>基数変換</value>
+  <data name="BeforeValue" xml:space="preserve">
+    <value>変更前の値</value>
   </data>
-  <data name="MenuCompare" xml:space="preserve">
-    <value>比較系</value>
+  <data name="AfterValue" xml:space="preserve">
+    <value>変更後の値</value>
   </data>
-  <data name="MenuCompareListItem" xml:space="preserve">
-    <value>リスト項目比較</value>
+  <data name="Compare" xml:space="preserve">
+    <value>比較</value>
   </data>
-  <data name="MenuCompareCLangDefine" xml:space="preserve">
-    <value>C言語定義比較</value>
+  <data name="MessageProcessing" xml:space="preserve">
+    <value>処理中です｡</value>
   </data>
-  <data name="ScreenTitleCompareListItem" xml:space="preserve">
-    <value>リスト項目比較</value>
-  </data>
-  <data name="ScreenTitleCompareCLangDefine" xml:space="preserve">
-    <value>C言語定義比較</value>
+  <data name="MessageComplete" xml:space="preserve">
+    <value>完了しました｡</value>
   </data>
 </root>

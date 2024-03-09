@@ -66,16 +66,22 @@ namespace SDAT.ViewModels
         private void ExecuteCommandTransitionScreen(string screenName)
         {
             // 指定された画面に遷移する
-            _regionManager.RequestNavigate(RegionNames.ContentRegion, screenName);
-
-            // タイトルを更新する
-            Title = screenName switch
+            _regionManager.RequestNavigate(RegionNames.ContentRegion, screenName, navigationResult =>
             {
-                "WelcomeInfo" => Core.Resources.Strings.ApplicationName,
-                "ConvertRadix" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleConvertRadix}",
-                "AboutInfo" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleAboutInfo}",
-                _ => Core.Resources.Strings.ApplicationName,
-            };
+                if (navigationResult.Result == true)
+                {
+                    // 画面遷移成功時にタイトルを更新する
+                    Title = screenName switch
+                    {
+                        "WelcomeInfo" => Core.Resources.Strings.ApplicationName,
+                        "ConvertRadix" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleConvertRadix}",
+                        "CompareListItem" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleCompareListItem}",
+                        "CompareCLangDefine" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleCompareCLangDefine}",
+                        "AboutInfo" => $"{Core.Resources.Strings.ApplicationName} | {Resources.Strings.ScreenTitleAboutInfo}",
+                        _ => Core.Resources.Strings.ApplicationName,
+                    };
+                }
+            });
         }
     }
 }

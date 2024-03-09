@@ -17,8 +17,20 @@
         /// <summary>
         /// バージョン情報取得処理(Modules.ConvertRadix)
         /// </summary>
-        /// <returns>Modules.WelcomeInfoのバージョン情報</returns>
+        /// <returns>Modules.ConvertRadixのバージョン情報</returns>
         string GetVersionInfoModulesConvertRadix();
+
+        /// <summary>
+        /// バージョン情報取得処理(Modules.CompareListItem)
+        /// </summary>
+        /// <returns>Modules.CompareListItemのバージョン情報</returns>
+        string GetVersionInfoModulesCompareListItem();
+
+        /// <summary>
+        /// バージョン情報取得処理(Modules.CompareCLangDefine)
+        /// </summary>
+        /// <returns>Modules.CompareCLangDefineのバージョン情報</returns>
+        string GetVersionInfoModulesCompareCLangDefine();
 
         /// <summary>
         /// バージョン情報取得処理(Modules.WelcomeInfo)

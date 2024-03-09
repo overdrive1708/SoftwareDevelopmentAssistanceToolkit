@@ -97,37 +97,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MenuHelp" xml:space="preserve">
-    <value>ヘルプ</value>
+  <data name="BeforeListItems" xml:space="preserve">
+    <value>変更前リスト項目</value>
   </data>
-  <data name="MenuAboutInfo" xml:space="preserve">
-    <value>このソフトウェアについて</value>
+  <data name="AfterListItems" xml:space="preserve">
+    <value>変更後リスト項目</value>
   </data>
-  <data name="ScreenTitleAboutInfo" xml:space="preserve">
-    <value>このソフトウェアについて</value>
+  <data name="AddListItems" xml:space="preserve">
+    <value>追加リスト項目</value>
   </data>
-  <data name="MenuConvert" xml:space="preserve">
-    <value>変換系</value>
+  <data name="DeleteListItems" xml:space="preserve">
+    <value>削除リスト項目</value>
   </data>
-  <data name="MenuConvertRadix" xml:space="preserve">
-    <value>基数変換</value>
+  <data name="Compare" xml:space="preserve">
+    <value>比較</value>
   </data>
-  <data name="ScreenTitleConvertRadix" xml:space="preserve">
-    <value>基数変換</value>
+  <data name="MessageProcessing" xml:space="preserve">
+    <value>処理中です｡</value>
   </data>
-  <data name="MenuCompare" xml:space="preserve">
-    <value>比較系</value>
-  </data>
-  <data name="MenuCompareListItem" xml:space="preserve">
-    <value>リスト項目比較</value>
-  </data>
-  <data name="MenuCompareCLangDefine" xml:space="preserve">
-    <value>C言語定義比較</value>
-  </data>
-  <data name="ScreenTitleCompareListItem" xml:space="preserve">
-    <value>リスト項目比較</value>
-  </data>
-  <data name="ScreenTitleCompareCLangDefine" xml:space="preserve">
-    <value>C言語定義比較</value>
+  <data name="MessageComplete" xml:space="preserve">
+    <value>完了しました｡</value>
   </data>
 </root>
