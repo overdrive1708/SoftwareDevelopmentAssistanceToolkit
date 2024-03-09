@@ -121,4 +121,10 @@
   <data name="Compare" xml:space="preserve">
     <value>比較</value>
   </data>
+  <data name="MessageProcessing" xml:space="preserve">
+    <value>処理中です｡</value>
+  </data>
+  <data name="MessageComplete" xml:space="preserve">
+    <value>完了しました｡</value>
+  </data>
 </root>

@@ -131,5 +131,23 @@ namespace SDAT.Modules.CompareCLangDefine.Resources {
                 return ResourceManager.GetString("DeleteDefinition", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   完了しました｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageComplete {
+            get {
+                return ResourceManager.GetString("MessageComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   処理中です｡ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MessageProcessing {
+            get {
+                return ResourceManager.GetString("MessageProcessing", resourceCulture);
+            }
+        }
     }
 }

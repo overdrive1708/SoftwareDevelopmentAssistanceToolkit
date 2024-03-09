@@ -1,32 +1,16 @@
 ﻿using Prism.Commands;
-using Prism.Mvvm;
+using Prism.Regions;
+using SDAT.Core.Mvvm;
+using SDAT.Services.Interfaces;
+using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using System.Windows.Threading;
 
 namespace SDAT.Modules.CompareCLangDefine.ViewModels
 {
-    public class CompareCLangDefineViewModel : BindableBase
+    public class CompareCLangDefineViewModel : RegionViewModelBase
     {
-        /// <summary>
-        /// 変更定義情報
-        /// </summary>
-        public class ChangeDefineInfo
-        {
-            /// <summary>
-            /// 定義名
-            /// </summary>
-            public string Define { get; set; } = string.Empty;
-
-            /// <summary>
-            /// 変更前定義値
-            /// </summary>
-            public string BeforeValue { get; set; } = string.Empty;
-
-            /// <summary>
-            /// 変更後定義値
-            /// </summary>
-            public string AfterValue { get; set; } = string.Empty;
-        }
-
         //--------------------------------------------------
         // バインディングデータ(スニペット:propp)
         //--------------------------------------------------
@@ -83,8 +67,8 @@ namespace SDAT.Modules.CompareCLangDefine.ViewModels
         /// <summary>
         /// 変更定義
         /// </summary>
-        private ObservableCollection<ChangeDefineInfo> _changeDefines = new();
-        public ObservableCollection<ChangeDefineInfo> ChangeDefines
+        private ObservableCollection<ChangeCLangDefineInfo> _changeDefines = new();
+        public ObservableCollection<ChangeCLangDefineInfo> ChangeDefines
         {
             get { return _changeDefines; }
             set { SetProperty(ref _changeDefines, value); }
@@ -151,10 +135,23 @@ namespace SDAT.Modules.CompareCLangDefine.ViewModels
             _commandCompare ?? (_commandCompare = new DelegateCommand(ExecuteCommandCompare));
 
         //--------------------------------------------------
+        // 内部変数
+        //--------------------------------------------------
+        /// <summary>
+        /// 比較完了後操作有効待ちタイマ
+        /// </summary>
+        private readonly DispatcherTimer _timerCompareEnableWait;
+
+        /// <summary>
+        /// CompareService
+        /// </summary>
+        private readonly ICompareCLangDefineService _compareService;
+
+        //--------------------------------------------------
         // メソッド
         //--------------------------------------------------
         /// <summary>
-        /// コンストラクタ
+        /// コンストラクタ(XAMLデザイナー用)
         /// </summary>
         public CompareCLangDefineViewModel()
         {
@@ -162,11 +159,85 @@ namespace SDAT.Modules.CompareCLangDefine.ViewModels
         }
 
         /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="regionManager">IRegionManager</param>
+        /// <param name="compareService">ICompareService</param>
+        public CompareCLangDefineViewModel(IRegionManager regionManager, ICompareCLangDefineService compareService) :
+            base(regionManager)
+        {
+            // CompareServiceの情報を設定する
+            _compareService = compareService;
+
+            // タイマ設定
+            _timerCompareEnableWait = new DispatcherTimer
+            {
+                Interval = new TimeSpan(0, 0, 1)
+            };
+            _timerCompareEnableWait.Tick += new EventHandler(TimeoutCompareEnableWait);
+        }
+
+        /// <summary>
         /// 比較実行コマンド実行処理
         /// </summary>
-        private void ExecuteCommandCompare()
+        private async void ExecuteCommandCompare()
         {
-            // TODO:処理実装
+            CompareCLangDefineResult compareResult;
+            Progress<int> progress = new(OnProgressChanged);
+
+            // 比較開始
+            IsEnableCompare = false;
+            IsEnableInput = false;
+            IsProgressIndeterminate = true;
+            IsProgressIndicatorVisible = true;
+            CompareState = Resources.Strings.MessageProcessing;
+
+            // 比較実施
+            await Task.Run(() =>
+            {
+                compareResult = _compareService.GetCLangDefineCompareResult(BeforeDefines, AfterDefines, progress);
+                AddDefines = compareResult.AddDefines;
+                DeleteDefines = compareResult.DeleteDefines;
+                ChangeDefines = new ObservableCollection<ChangeCLangDefineInfo>(compareResult.ChangeDefines);
+            });
+
+            // 比較完了
+            CompareState = Resources.Strings.MessageComplete;
+            IsEnableInput = true;
+            _timerCompareEnableWait.Start();
+        }
+
+        /// <summary>
+        /// 比較完了後操作有効待ちタイマのタイムアウト処理
+        /// </summary>
+        /// <param name="sender">イベントソース</param>
+        /// <param name="e">イベントデータ</param>
+        private void TimeoutCompareEnableWait(object sender, EventArgs e)
+        {
+            _timerCompareEnableWait.Stop();
+            CompareState = Resources.Strings.Compare;
+            IsEnableCompare = true;
+            IsProgressIndicatorVisible = false;
+            IsProgressIndeterminate = false;
+        }
+
+        /// <summary>
+        /// 進捗更新処理
+        /// </summary>
+        /// <param name="percentage">進捗率</param>
+        private void OnProgressChanged(int percentage)
+        {
+            if (percentage == ICompareListItemService.ProgressUnknown)
+            {
+                IsProgressIndeterminate = true;
+                CompareState = Resources.Strings.MessageProcessing;
+            }
+            else
+            {
+                IsProgressIndeterminate = false;
+                NowProgress = percentage;
+                CompareState = $"{Resources.Strings.MessageProcessing}({percentage}%)";
+            }
         }
     }
 }
