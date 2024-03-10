@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
@@ -27,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.ConvertRadix",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.CompareListItem", "Modules\SDAT.Modules.CompareListItem\SDAT.Modules.CompareListItem.csproj", "{EFAA0E36-2709-40E2-BAAF-5D98AD14CA7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDAT.Modules.CompareCLangDefine", "Modules\SDAT.Modules.CompareCLangDefine\SDAT.Modules.CompareCLangDefine.csproj", "{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDAT.Modules.CompareCLangDefine", "Modules\SDAT.Modules.CompareCLangDefine\SDAT.Modules.CompareCLangDefine.csproj", "{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,7 +86,7 @@ Global
 		{1B1BC3D0-56AE-458F-90EA-483DF11C4ED4} = {C540AC6D-1576-4D14-A650-90C6F17EE4FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_NeutralResourcesLanguage = ja-JP
 		SolutionGuid = {D6A478D8-94CE-4648-9111-28C190E93450}
+		RESX_NeutralResourcesLanguage = ja-JP
 	EndGlobalSection
 EndGlobal

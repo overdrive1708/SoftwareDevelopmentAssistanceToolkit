@@ -70,10 +70,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.6.0.x64"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.8.0.x64"
                     {
-                    "Name" = "8:.NET デスクトップ ランタイム 6.0.21 (x64)"
-                    "ProductCode" = "8:Microsoft.NetCore.DesktopRuntime.6.0.x64"
+                    "Name" = "8:.NET デスクトップ ランタイム 8.0.2 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.DesktopRuntime.8.0.x64"
                     }
                 }
             }
@@ -185,7 +185,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SoftwareDevelopmentAssistanceToolkit"
         "ProductCode" = "8:{D16C9818-698F-4DC3-B017-7E09C879359C}"
-        "PackageCode" = "8:{6F61EE4E-5A13-4AD4-B2F7-31A3F6A515CC}"
+        "PackageCode" = "8:{F9EA2034-9D3B-4D7C-BD9D-64DD81C6A89E}"
         "UpgradeCode" = "8:{4493E9DA-09B0-4D5B-8209-DA8E88BAF511}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -734,7 +734,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_27EC11A9828B4BA6903DC189C6718AB6"
             {
-            "SourcePath" = "8:..\\SDAT\\obj\\Release\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\SDAT\\obj\\Release\\net8.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_FDAA996DF0FC4F519273867767EE30FC"
