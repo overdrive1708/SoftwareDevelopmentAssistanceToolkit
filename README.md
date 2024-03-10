@@ -47,7 +47,7 @@ SoftwareDevelopmentAssistanceToolkit_vx.x.x_Installer.zipをダウンロード�
 - プログラムの追加と削除(アプリと機能･インストールされているアプリ)から｢SoftwareDevelopmentAssistanceToolkit｣を選択してアンインストールしてください｡
 
 ## 必要要件
-- [.NET デスクトップ ランタイム 6.x.x](https://dotnet.microsoft.com/ja-jp/download/dotnet/6.0)
+- [.NET デスクトップ ランタイム 8.x.x](https://dotnet.microsoft.com/ja-jp/download/dotnet/8.0)
 
 ## 開発環境
 - Microsoft Visual Studio Community 2022
