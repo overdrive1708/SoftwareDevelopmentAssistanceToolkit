@@ -1,6 +1,6 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
-using Prism.Regions;
+using Prism.Navigation.Regions;
 using SDAT.Core;
 
 namespace SDAT.Modules.WelcomeInfo

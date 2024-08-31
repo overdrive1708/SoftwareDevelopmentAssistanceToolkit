@@ -1,4 +1,4 @@
-﻿using Prism.Regions;
+﻿using Prism.Navigation.Regions;
 using SDAT.Core.Mvvm;
 
 namespace SDAT.Modules.WelcomeInfo.ViewModels
