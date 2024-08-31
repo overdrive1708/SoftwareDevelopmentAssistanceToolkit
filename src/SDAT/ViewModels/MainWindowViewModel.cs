@@ -1,6 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
-using Prism.Regions;
+using Prism.Navigation.Regions;
 using SDAT.Core;
 
 namespace SDAT.ViewModels
@@ -68,7 +68,7 @@ namespace SDAT.ViewModels
             // 指定された画面に遷移する
             _regionManager.RequestNavigate(RegionNames.ContentRegion, screenName, navigationResult =>
             {
-                if (navigationResult.Result == true)
+                if (navigationResult.Success == true)
                 {
                     // 画面遷移成功時にタイトルを更新する
                     Title = screenName switch

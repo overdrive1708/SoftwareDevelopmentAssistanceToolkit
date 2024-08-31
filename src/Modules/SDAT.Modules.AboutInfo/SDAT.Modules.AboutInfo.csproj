@@ -8,7 +8,7 @@
     <Resource Include="Resources\AppIconExe-multisize.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="9.0.537" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\SDAT.Core\SDAT.Core.csproj" />
